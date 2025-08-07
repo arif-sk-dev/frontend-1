@@ -1,4 +1,4 @@
-// cart.js   [global dynamic cart function]
+// cart.js   [global dynamic cart function]
 let listProducts = [];
 let carts = [];
 
@@ -42,6 +42,11 @@ const addToCart = (product_id) => {
 };
 
 const addCartToHTML = () => {
+  // FIXED: Add a check to ensure listCartHTML exists
+  if (!listCartHTML) {
+      return;
+  }
+  
   listCartHTML.innerHTML = "";
   let totalUniqueProducts = 0;
 
@@ -63,7 +68,9 @@ const addCartToHTML = () => {
     listCartHTML.appendChild(newCart);
   });
 
-  cartCount.innerText = totalUniqueProducts;
+  if (cartCount) {
+    cartCount.innerText = totalUniqueProducts;
+  }
 
   listCartHTML.querySelectorAll(".quantity").forEach(input => {
     input.addEventListener("change", event => {
@@ -128,25 +135,24 @@ const closeNav = document.getElementById("closeNav");
 const sideNav = document.getElementById("mySidenav");
 const overlay2 = document.getElementById("overlay2");
 
-openNav.addEventListener("click", () => {
+openNav?.addEventListener("click", () => {
   sideNav.classList.add("active");
   overlay2.classList.add("active");
 });
 
-closeNav.addEventListener("click", () => {
+closeNav?.addEventListener("click", () => {
   sideNav.classList.remove("active");
   overlay2.classList.remove("active");
 });
 
-overlay2.addEventListener("click", () => {
+overlay2?.addEventListener("click", () => {
   sideNav.classList.remove("active");
   overlay2.classList.remove("active");
 });
-
 //SideNav end here ==========
 
-// accordion section start here ============
 
+// accordion section start here ============
 // Function to close the side navigation menu
 const closeSidenav = () => {
   const sideNav = document.getElementById("mySidenav");
@@ -158,22 +164,27 @@ const closeSidenav = () => {
   }
 };
 
-document.querySelectorAll(".accordion-toggle").forEach(button => {
-    button.addEventListener("click", () => {
-        const panel = button.nextElementSibling;
-        const isOpen = panel.style.maxHeight;
+// FIXED: Add a check for the existence of elements before adding event listeners
+const accordionToggles = document.querySelectorAll(".accordion-toggle");
+if (accordionToggles.length > 0) {
+    accordionToggles.forEach(button => {
+        button.addEventListener("click", () => {
+            const panel = button.nextElementSibling;
+            const isOpen = panel.style.maxHeight;
 
-        // Close all other panels and remove 'active' class
-        document.querySelectorAll(".accordion-panel").forEach(p => p.style.maxHeight = null);
-        document.querySelectorAll(".accordion-toggle").forEach(btn => btn.classList.remove("active"));
+            // Close all other panels and remove 'active' class
+            document.querySelectorAll(".accordion-panel").forEach(p => p.style.maxHeight = null);
+            document.querySelectorAll(".accordion-toggle").forEach(btn => btn.classList.remove("active"));
 
-        // Toggle current panel
-        if (!isOpen) {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            button.classList.add("active");
-        }
+            // Toggle current panel
+            if (!isOpen) {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                button.classList.add("active");
+            }
+        });
     });
-});
+}
+
 
 // Render accordion links dynamically
 const loadAccordionLinks = () => {
@@ -184,6 +195,9 @@ const loadAccordionLinks = () => {
 
             categories.forEach(category => {
                 const panel = document.getElementById(`${category}Panel`);
+                // FIXED: Check if the panel exists before adding links
+                if (!panel) return; 
+                
                 const types = Array.from(new Set(data
                     .filter(p => p.category === category)
                     .map(p => p.type)));
