@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <!-- <link rel="stylesheet" href="baby.css"> -->
+  <title>Outlet Locations | A.H Cloth</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .container-store {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 1rem auto;
+    }
+
+    .outlet-card {
+      width: 100%;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .map {
+      width: 100%;
+      background-color: #ccc; /* placeholder for map */
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .details {
+      padding: 10px;
+    }
+
+    .details h3 {
+      /* margin-bottom: 10px; */
+      color: #007bff;
+      margin: 0;
+    }
+
+    .details p {
+      /* margin: 8px 0; */
+      color: #444;
+      margin: 0;
+    }
+
+    .details strong {
+      /* display: block; */
+      /* margin-bottom: 5px; */
+      color: #000;
+    }
+
+    @media (max-width: 968px) {
+      .container-store {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <p class="heading" style="text-align: center; font-size: clamp(1.1rem, calc(1.8vw + .17rem), 2rem);">Store Location | A.H Cloth</p>
+  
+  <div class="container-store">
+
+    <div class="outlet-card">
+      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58403.624263334976!2d90.32108054214282!3d23.810542906657723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c1c61277db%3A0xc7d18838730e2e59!2sMirpur%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1754406458354!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="details">
+        <h3>Mirpur 1 Outlet</h3>
+        <p><strong>Address:</strong> Mirpur, Dhaka</p>
+        <p><strong>Outlet Hotline:</strong> 01XXXXXXXXX</p>
+        <p><strong>Rating:</strong> 4.1 stars from 517 reviews</p>
+      </div>
+    </div>
+
+    <div class="outlet-card">
+      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.213097114281!2d90.3786835137408!3d23.86999192308355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c56316c49d07%3A0x62e6d117f1d23d75!2sUttara%2C%20Sector%207%20Park!5e0!3m2!1sen!2sbd!4v1754406529458!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="details">
+        <h3>Uttara Outlet</h3>
+        <p><strong>Address:</strong> Sector 14, Uttara, Dhaka 1230</p>
+        <p><strong>Outlet Hotline:</strong> 01XXXXXXXXX</p>
+        <p><strong>Rating:</strong> 4.4 stars from 100 reviews</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
+  <script src="loadHeader.js"></script>
+  <script src="loadFooter.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+body {
+  font-family: "Poppins";
+}
+html {
+  scroll-behavior: smooth;
+}
+/* * {
+  border: 1px solid red;
+} */
+
+#footer-special {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  text-align: center;
+  gap: 20px;
+  margin: 2rem auto;
+  color: gray;
+}
+.ri-truck-line,
+.ri-bank-card-line,
+.ri-text-wrap,
+.ri-customer-service-line {
+  font-size: 30px;
+}
+ .foot-s-card {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px lightgray;
+  line-height: 10px;
+  padding-top: 2rem;
+ }
+
+footer {
+  background-color: #252525;
+  color: lightgray;
+  padding-top: 2rem;
+  padding-bottom: 10px;
+}
+
+.footer-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 70px;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  padding: 10px;
+  border-bottom: 0.001px solid teal;
+}
+.footer-1 p, .footer-1 input, .footer-1 button {
+  margin: 0;
+}
+.footer-1 i {
+  font-size: 18px;
+  color: white;
+}
+input {
+  background-color: inherit;
+  width: 60%;
+  padding-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+.newsletterBtn {
+  padding: 8px 12px;
+  color: white;
+  background-color: teal;
+  opacity: 0.8;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.newsletterBtn:hover {
+  background-color: teal;
+}
+
+/* Footer-2 section start here  */
+.title:hover {
+  color: teal;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.footer-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: baseline;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 2rem auto;
+  color: gray;
+}
+.footer-2 a {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 14px;
+}
+.footer-2 a:hover,
+.footer-2 i:hover {
+  color: red;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.col-1, .col-2 {
+  display: flex;
+  flex-direction: column;
+}
+.col-3 >.icon> i {
+  padding-right: 8px;
+}
+
+.download-link {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.download-link > img {
+  max-width: 40%;
+  display: block;
+  aspect-ratio: 19/5;
+  border-radius: 8px;
+}
+
+.footer-3 {
+  max-width: 1000px;
+  text-align: center;
+  color: lightgray;
+  margin: 2rem auto 0;
+  line-height: 5px;
+}
+@media (350px <= width <=968px) {
+  #footer-special {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem 1rem;
+  }
+  .footer-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .footer-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
+    margin: 0;
+  }
+  .download-link {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

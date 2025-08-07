@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <div class="checkout-container">
+    <h2 style="font-size: clamp(1.3rem, calc(1.8vw + .17rem), 2rem);">Order Summary</h2>
+    <div id="checkout-items"></div>
+    <div class="checkout-total">Total: $<span id="total-amount">0.00</span></div>
+
+    <form id="order-form">
+      <h3 style="font-size: clamp(1.1rem, calc(1.5vw + .17rem), 1.5rem);">Customer Info</h3>
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Enter a valid 11-digit mobile number" pattern="^\d{11}$" id="mobile" required>
+      <input type="email" placeholder="Email" id="email" required>
+      <input type="text" placeholder="Address" required>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <style>
+.checkout-container {
+  max-width: 700px;
+  background: white;
+  padding: 10px 30px 30px;
+  margin: 4.5rem auto;
+  box-shadow: 0 0 10px lightslategray;
+  border-radius: 6px;
+}
+
+#checkout-items .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.checkout-total {
+  text-align: right;
+  font-size: clamp(1rem, calc(1.5vw + .17rem), 1.5rem);
+  /* margin: 10px 0; */
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  background-color: teal;
+  opacity: 0.8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form button:hover {
+  opacity: 1;
+}
+
+/* small screen device  */
+@media (350px <= width <=968px) {
+  .checkout-container {
+    margin: 1.5rem;
+  }
+}
+  </style>
+
+  <script src="cart.js"></script>
+  <script src="checkout.js"></script>
+  <!-- <script src="loadHeader.js"></script> -->
+  <script src="loadFooter.js"></script>
+</body>
+</html>

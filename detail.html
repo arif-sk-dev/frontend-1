@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Details</title>
+  <link rel="stylesheet" href="detail.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section id="prodetails" class="product-detail-container">
+    <div class="img-section">
+      <img id="main-img" class="productImg" src="" alt="main image">
+      <div class="thumbnails">
+        <img class="small-img" src="" alt="thumbnails1" onclick="changeImage(this)">
+        <img class="small-img" src="" alt="thumbnails1" onclick="changeImage(this)">
+        <img class="small-img" src="" alt="thumbnails1" onclick="changeImage(this)">
+        <img class="small-img" src="" alt="thumbnails1" onclick="changeImage(this)">
+      </div>
+    </div>
+
+    <div class="info">
+      <h2 id="product-name">Product Name</h2>
+      <h4 class="price">$0.00</h4>
+      <select>
+        <option>Select Size</option>
+        <option>Small (S)</option>
+        <option>Medium (M)</option>
+        <option>Large (L)</option>
+        <option>X-Large (XL)</option>
+      </select>
+
+      <input type="number" value="1" min="1"> 
+
+        <!-- size guide section start here  -->
+      <button class="size-guide-btn" id="openSizeGuide">Size Guide</button>
+
+      <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-content">
+          <i class="ri-close-large-fill popup-close" id="closeSizeGuide"></i>
+          <h2>Size Guide</h2>
+          <ul>
+            <li>XS – Chest 32–34", Waist 24–26"</li>
+            <li>S – Chest 34–36", Waist 26–28"</li>
+            <li>M – Chest 38–40", Waist 30–32"</li>
+            <li>L – Chest 42–44", Waist 34–36"</li>
+            <li>XL – Chest 46–48", Waist 38–40"</li>
+          </ul>
+          <p>For best fit, compare with your favorite garment measurements!</p>
+        </div><br> 
+        <!-- size guide section end here  -->
+
+      <button class="add-cart" id="addToCartBtn">Add to Cart</button>
+     
+      <h5 style="border-bottom: 0.002px solid lightgray;">Product Details</h5>
+      <p id="product-desc"></p>
+    </div>
+
+    <div class="additional-info">
+      <p class="heading"">Additional Information</p>
+      <div class="ul">
+        <a href=""><i class="ri-truck-fill"></i>Delivering All Over Bangladesh</a>
+        <a href="terms.html"><i class="ri-information-2-fill"></i>Shopping Guideline</a>
+        <a href=""><i class="ri-bank-card-fill"></i>Payment Method</a>
+        <a href=""><i class="ri-ship-2-fill"></i>Shipping & Charge</a>
+        <a href="return.html"><i class="ri-refresh-line"></i>Return Policy</a>
+        <a href=""><i class="ri-store-line"></i>9am-6pm Support</a>
+      </div>
+    </div>
+  </section>
+
+
+<div class="similar-products">
+  <h3 style="font-size: clamp(1.1rem, calc(1.8vw + .17rem), 2rem); font-weight: 400; margin: 0; border-bottom: 1px solid lightgray;">You may also like</h3>
+  <div class="similar-list">
+    <div class="item">
+      <!-- <img src="image/baby12.jpg" alt=""> 
+      <h4>LD02 Lounge Dress</h4>
+      <div class="price">$110</div>
+      <button class="addCart">Add To Cart</button> -->
+    </div>
+  </div>
+</div>
+
+  <div id="footer-placeholder"></div>
+  <script src="detail.js"></script>
+  <script src="loadHeader.js"></script>
+  <script src="loadFooter.js"></script>
+  <!-- <script src="cart.js"></script> -->
+</body>
+</html>

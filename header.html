@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Header</title>
+</head>
+<body>
+  <div class="headerShadow sticky-nav">
+    <i class="ri-menu-line menubar" id="openNav"></i>
+    <div class="title" style="font-size: 22px; font-weight: bold; cursor: pointer; text-align: center;" onclick="window.location.href='index.html'">A.H cloth</div>
+    <header>
+      <a href="index.html" class="navLink">HOME</a>
+      <a href="baby.html" class="navLink">BABY</a>
+      <a href="women.html" class="navLink">WOMEN</a>
+      <a href="men.html" class="navLink">MEN</a>
+      <a href="aboutus.html" class="navLink">ABOUT</a>
+      <a href="contactus.html" class="navLink">CONTACT</a>
+    </header>
+    <i class="ri-shopping-cart-2-line icon-cart" id="icon-cart"><span id="cart-count">0</span></i>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <i class="ri-close-large-line close-sidenav" id="closeNav"></i>
+    <div class="category-accordion">
+      <a href="index.html">HOME</a>
+      <button class="accordion-toggle" data-category="baby">BABY</button>
+      <div class="accordion-panel" id="babyPanel"></div>
+
+      <button class="accordion-toggle" data-category="women">WOMEN</button>
+      <div class="accordion-panel" id="womenPanel"></div>
+
+      <button class="accordion-toggle" data-category="men">MEN</button>
+      <div class="accordion-panel" id="menPanel"></div>
+
+      <a href="aboutus.html">ABOUT</a>
+      <a href="contactus.html">CONTACT</a>
+    </div>
+  </div>
+  <div class="overlay2" id="overlay2"></div>
+
+
+  <div class="overlay" id="overlay"></div>
+  <div class="cartTab" id="cartTab">
+    <h2>Shopping Cart</h2>
+    <div class="listCart">
+      <!-- <div class="item">
+        <div class="image">
+          <img src="image/baby12.jpg" alt="">
+        </div>
+        <div class="name">NAME</div>
+        <div class="totalPrice">$100</div>
+        <input type="number" value="1" min="1" class="quantity">
+        <i class="ri-delete-bin-6-fill cart-remove"></i>
+      </div> -->
+    </div>
+    <div class="btn">
+      <button class="close" id="close">CLOSE</button>
+      <button class="checkOut" onclick="window.location.href='checkout.html'">CHECKOUT</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
