@@ -167,9 +167,10 @@ header a.active {
 
 .cartTab h2 {
   padding: 10px;
-  margin: 0;
+  margin: 0 10px;
   font-size: 18px;
   font-weight: 400;
+  border-bottom: 0.001px solid lightgray;
 }
 .cartTab .btn {
   display: grid;
@@ -205,12 +206,13 @@ header a.active {
 }
 .cartTab .listCart .item {
   display: grid;
-  grid-template-columns: 55px 1fr 55px 38px 20px;
-  gap: 3px;
-  text-align: center;
+  /* grid-template-columns: 55px 1fr 55px 45px 20px; */
+  grid-template-columns: 1.3fr 4fr 0.5fr 1.5fr 0.3fr;
+  gap: 5px;
+  text-align: left;
   align-items: center;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 10px;
   font-size: 14px;
 }
 .cartTab i {
@@ -223,7 +225,7 @@ header a.active {
 
 .listCart .quantity span {
   display: inline-block;
-  width: 25px;
+  width: 25px; 
   height: 25px;
   background-color: #a47474;
   border-radius: 50px;
@@ -233,7 +235,8 @@ header a.active {
   background-color: transparent;
 }
 .listCart .item:nth-child(even) {
-  background-color: rgb(203, 245, 245);
+  /* background-color: rgb(203, 245, 245); */
+  background-color: #eee;
 }
 .listCart {
   overflow: auto;
