@@ -90,6 +90,10 @@ startSlideshow();
       }
     });
 
+// ✅ Show the first slide immediately on page load
+showSlide(currentIndex);
+startSlideshow();
+
 // Pause on hover
 document.querySelector(".slideshow-container").addEventListener("mouseover", stopSlideshow);
 document.querySelector(".slideshow-container").addEventListener("mouseleave", startSlideshow);
