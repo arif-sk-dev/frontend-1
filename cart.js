@@ -209,7 +209,7 @@ const loadAccordionLinks = () => {
         });
         panel.appendChild(allLink);
 
-        // Now create individual type links
+        // create individual type links
         const types = Array.from(new Set(categoryProducts.map(p => p.type)));
         types.forEach(type => {
           const typeCount = categoryProducts.filter(p => p.type === type).length;
@@ -234,7 +234,7 @@ const loadAccordionLinks = () => {
     });
 };
 
-// ====== FILTER PRODUCTS ======
+// Filter Products 
 const filterProducts = (category, type) => {
   fetch("products.json")
     .then(res => res.json())
@@ -257,7 +257,7 @@ const filterProducts = (category, type) => {
     });
 };
 
-// ====== URL PARAM FILTER ON LOAD ======
+//url pram filter on load 
 const checkURLForFilters = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const category = urlParams.get('category');
@@ -268,7 +268,7 @@ const checkURLForFilters = () => {
   }
 };
 
-// Init
+
 loadAccordionLinks();
 if (window.location.pathname.includes("product.html") || window.location.pathname === "/") {
   checkURLForFilters();
