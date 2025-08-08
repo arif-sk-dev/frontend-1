@@ -1,7 +1,8 @@
-//Get the product list container
+
+// Get the product list container
 const listProductHTML = document.querySelector(".listProduct");
 
-//Define a function to display products in HTML
+// Function to display products
 const addDataToHTML = (products) => {
   listProductHTML.innerHTML = ""; // Clear current content
 
@@ -24,106 +25,92 @@ const addDataToHTML = (products) => {
   });
 };
 
-// Enable Add To Cart logic by delegating click event
+// Add to cart via delegation
 listProductHTML.addEventListener("click", (event) => {
   if (event.target.classList.contains("addCart")) {
     const product_id = event.target.closest(".item").dataset.id;
-    window.addToCart(product_id); // Global cart logic from header.html
+    window.addToCart(product_id); // Global cart function from header.html
   }
 });
 
-// Initialize and load baby products only
+// Load baby products initially
 const initApp = () => {
   fetch("products.json")
     .then(res => res.json())
     .then(data => {
-      // Filter only "baby" category products
       const babyProducts = data.filter(product => product.category === "baby");
-      addDataToHTML(babyProducts); // Load to page
+      addDataToHTML(babyProducts);
     });
 };
 initApp();
 
-// get baby products all item count =============
+// ====== Baby product counts ======
 fetch("products.json")
   .then(res => res.json())
   .then(data => {
     const babyProducts = data.filter(product => product.category === "baby");
+
+    // Total baby product count
     const babyItemCount = babyProducts.length;
-    // console.log("Total number count", babyItemCount);
     document.getElementById("allItem").innerHTML = `Baby all Product: ${babyItemCount} items`;
+    document.getElementById("baby-all-items").innerHTML = babyItemCount;
+
+    // Types to count
+    const types = [
+      "shirt", "pant", "tshirt", "bodysuits", "leggings",
+      "joggers", "frocks", "scarves", "pajama", "shoe"
+    ];
+
+    // Count each type dynamically
+    types.forEach(type => {
+      const count = babyProducts.filter(product => product.type === type).length;
+      document.getElementById(`${type}Count`).innerHTML = count;
+    });
+
+    // Count "other" types
+    const otherCount = babyProducts.filter(product => !types.includes(product.type)).length;
+    document.getElementById("otherCount").innerHTML = otherCount;
   });
 
-// Count specific types within baby products============
-fetch("products.json")
-  .then(res => res.json())
-  .then(data => {
-    const babyProducts = data.filter(product => product.category === "baby");
-    const shirtCount = babyProducts.filter(product => product.type === "shirt").length;
-    const pantCount = babyProducts.filter(product => product.type === "pant").length;
-    const tshirtCount = babyProducts.filter(product => product.type === "tshirt").length;
-    const bodysuitsCount = babyProducts.filter(product => product.type === "bodysuits").length;
-    const leggingsCount = babyProducts.filter(product => product.type === "leggings").length;
-    const joggersCount = babyProducts.filter(product => product.type === "joggers").length;
-    const frocksCount = babyProducts.filter(product => product.type === "frocks").length;
-    const scarvesCount = babyProducts.filter(product => product.type === "scarves").length;
-    const pajamaCount = babyProducts.filter(product => product.type === "pajama").length;
-    const shoeCount = babyProducts.filter(product => product.type === "shoe").length;
-
-      // Count 'other' baby items (those not explicitly shirt or pant t-shirt etc.)
-    const otherCount = babyProducts.filter(product => product.type !== "shirt" && product.type !== "pant" && product.type !== "tshirt" && product.type !== "bodysuits" && product.type !== "leggings" && product.type !== "joggers" && product.type !== "frocks" && product.type !== "scarves" && product.type !== "pajama" && product.type !== "shoe").length;
-
-    document.getElementById("shirtCount").innerHTML = `${shirtCount}`;
-    document.getElementById("pantCount").innerHTML = `${pantCount}`;
-    document.getElementById("tshirtCount").innerHTML = `${tshirtCount}`;
-    document.getElementById("bodysuitsCount").innerHTML = `${bodysuitsCount}`;
-    document.getElementById("leggingsCount").innerHTML = `${leggingsCount}`;
-    document.getElementById("joggersCount").innerHTML = `${joggersCount}`;
-    document.getElementById("frocksCount").innerHTML = `${frocksCount}`;
-    document.getElementById("scarvesCount").innerHTML = `${scarvesCount}`;
-    document.getElementById("pajamaCount").innerHTML = `${pajamaCount}`;
-    document.getElementById("shoeCount").innerHTML = `${shoeCount}`;
-    document.getElementById("otherCount").innerHTML = `${otherCount}`;
-  });
-
-
-// sidebar link's counted product show ==============
+// ====== Sidebar category filtering ======
 document.querySelectorAll('.sidebar-link').forEach(link => {
   link.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault();
     const selectedType = event.target.dataset.type;
-    filterBabyProductsByType(selectedType);
+
+    if (selectedType === "babyAllItems") {
+      showAllBabyProducts();
+    } else {
+      filterBabyProductsByType(selectedType);
+    }
   });
 });
 
-// Filter baby category by selected type
-// const filterBabyProductsByType = (type) => {
-//   fetch("products.json")
-//     .then(res => res.json())
-//     .then(data => {
-//       const knownTypes = ["shirt", "pant", "tshirt", "bodysuits", "leggings", "joggers", "frocks", "scarves", "pajama"];
-//       const filteredProducts = data.filter(product =>
-//         product.category === "baby" && (
-//           type === "other"
-//             ? !knownTypes.includes(product.type)
-//             : product.type === type
-//         )
-//       );
-//       addDataToHTML(filteredProducts);
-//     });
-// };
+// Show all baby products
+const showAllBabyProducts = () => {
+  fetch("products.json")
+    .then(res => res.json())
+    .then(data => {
+      const babyProducts = data.filter(product => product.category === "baby");
+      addDataToHTML(babyProducts);
+    });
+};
 
-// Filter baby category by selected type 
+// Filter baby products by type
 const filterBabyProductsByType = (type) => {
   fetch("products.json")
     .then(res => res.json())
     .then(data => {
-      const filteredProducts = data.filter(product => 
-        product.category === "baby" && (
-          type === "other" ? product.type !== "shirt" && product.type !== "pant" && product.type !== "tshirt" && product.type !== "bodysuits" && product.type !== "leggings" && product.type !== "joggers" && product.type !== "frocks" && product.type !== "scarves" && product.type !== "pajama" && product.type !== "shoe" : product.type === type
-        )
+      const types = [
+        "shirt", "pant", "tshirt", "bodysuits", "leggings",
+        "joggers", "frocks", "scarves", "pajama", "shoe"
+      ];
+
+      const filteredProducts = data.filter(product =>
+        product.category === "baby" &&
+        (type === "other" ? !types.includes(product.type) : product.type === type)
       );
+
       addDataToHTML(filteredProducts);
     });
 };
-

@@ -1,7 +1,8 @@
-//Get the product list container
+
+// Get the product list container
 const listProductHTML = document.querySelector(".listProduct");
 
-//Define a function to display products in HTML
+// Define a function to display products in HTML
 const addDataToHTML = (products) => {
   listProductHTML.innerHTML = ""; // Clear current content
 
@@ -37,24 +38,23 @@ const initApp = () => {
   fetch("products.json")
     .then(res => res.json())
     .then(data => {
-      // Filter only "women" category products
       const womenProducts = data.filter(product => product.category === "women");
-      addDataToHTML(womenProducts); // Load to page
+      addDataToHTML(womenProducts);
     });
 };
 initApp();
 
-// get women product all item count =============
+// Get women product all item count
 fetch("products.json")
   .then(res => res.json())
   .then(data => {
     const womenProducts = data.filter(product => product.category === "women");
     const womenItemCount = womenProducts.length;
-    // console.log("Total number count", womenItemCount);
     document.getElementById("allItem").innerHTML = `Women all Product: ${womenItemCount} items`;
+    document.getElementById("women-all-items").innerHTML = `${womenItemCount}`; // for first sidebar
   });
 
-// Count specific types within women products============
+// Count specific types within women products
 fetch("products.json")
   .then(res => res.json())
   .then(data => {
@@ -70,8 +70,9 @@ fetch("products.json")
     const scarvesCount = womenProducts.filter(product => product.type === "scarves").length;
     const shoeCount = womenProducts.filter(product => product.type === "shoe").length;
 
-      // Count 'other' women items (those not explicitly shirt or pant)
-    const otherCount = womenProducts.filter(product => product.type !== "top" && product.type !== "bottom" && product.type !== "shari" && product.type !== "kaftan" && product.type !== "gown" && product.type !== "maxi" && product.type !== "bodycon" && product.type !== "scarves" && product.type !== "shoe").length;
+    const otherCount = womenProducts.filter(product =>
+      !["top", "bottom", "shari", "kaftan", "gown", "maxi", "bodycon", "scarves", "shoe"].includes(product.type)
+    ).length;
 
     document.getElementById("topCount").innerHTML = `${topCount}`;
     document.getElementById("bottomCount").innerHTML = `${bottomCount}`;
@@ -85,27 +86,42 @@ fetch("products.json")
     document.getElementById("otherCount").innerHTML = `${otherCount}`;
   });
 
-
-// sidebar link's counted product show/execute ==============
+// Sidebar link's counted product show/execute
 document.querySelectorAll('.sidebar-link').forEach(link => {
   link.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault();
     const selectedType = event.target.dataset.type;
-    filterWomenProductsByType(selectedType);
+
+    if (selectedType === "womenAllItems") {
+      showAllWomenProducts();
+    } else {
+      filterWomenProductsByType(selectedType);
+    }
   });
 });
 
-// Filter baby category by selected type
+// Show all women products
+const showAllWomenProducts = () => {
+  fetch("products.json")
+    .then(res => res.json())
+    .then(data => {
+      const womenProducts = data.filter(product => product.category === "women");
+      addDataToHTML(womenProducts);
+    });
+};
+
+// Filter women products by type
 const filterWomenProductsByType = (type) => {
   fetch("products.json")
     .then(res => res.json())
     .then(data => {
-      const filteredProducts = data.filter(product => 
+      const filteredProducts = data.filter(product =>
         product.category === "women" && (
-          type === "other" ? product.type !== "top" && product.type !== "bottom" && product.type !== "shari" && product.type !== "kaftan" && product.type !== "gown" && product.type !== "maxi" && product.type !== "bodycon" && product.type !== "scarves" && product.type !== "shoe" : product.type === type
+          type === "other"
+            ? !["top", "bottom", "shari", "kaftan", "gown", "maxi", "bodycon", "scarves", "shoe"].includes(product.type)
+            : product.type === type
         )
       );
       addDataToHTML(filteredProducts);
     });
 };
-
