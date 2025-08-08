@@ -550,7 +550,7 @@ header a.active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    margin: 4.5rem 0;
+    margin: 4.5rem 0 1rem;
   }
    .sidebar {
     display: none;
