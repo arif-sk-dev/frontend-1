@@ -10,6 +10,91 @@
 <body>
   <div id="header-placeholder"></div>
 
+  <!-- slideshow start here =================-->
+    <div class="slideshow-container">
+      <div class="slide fade"  data-url="baby.html">
+        <img src="image/banner/baby1.jpg" alt="">
+      </div>
+      <div class="slide fade" data-url="women.html">
+        <img src="image/banner/baby2.jpg" alt="">
+      </div>
+      <div class="slide fade" data-url="men.html">
+        <img src="image/banner/women1.jpg" alt="">
+      </div>
+      <div class="slide fade" data-url="">
+        <img src="image/banner/men.jpg" alt="">
+      </div>
+      <div class="slide fade" data-url="">
+        <img src="image/banner/women2.jpg" alt="">
+      </div>
+
+            <!-- Dot indicators -->
+      <div class="dots-container">
+        <span class="dot" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
+      </div>
+    </div>
+
+    <!-- <script>
+      // ============Slide Show/Banner section start here ===========
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+let currentIndex = 0;
+let intervalId;
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  dots.forEach(dot => dot.classList.remove("active"));
+    
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+function startSlideshow() {
+  intervalId = setInterval(nextSlide, 4000); // Change every 3 seconds
+}
+
+function stopSlideshow() {
+  clearInterval(intervalId);
+}
+
+function setSlide(index) {
+  stopSlideshow(); // Stop auto-play when manually selected
+  currentIndex = index;
+  showSlide(index);
+  startSlideshow();
+}
+
+// Start slideshow on page load
+startSlideshow();
+
+//Url link to all slide individually
+    const slideshowContainer = document.querySelector(".slideshow-container");
+    slideshowContainer.addEventListener('click', () => {
+                // Get the currently active slide (the one with the 'active' class)
+      const activeSlide = document.querySelector('.slide.active');
+      if (activeSlide) {
+        const url = activeSlide.getAttribute('data-url');
+        if (url) {
+          window.location.href = url; // Navigate to the URL
+        }
+      }
+    });
+
+// Pause on hover
+document.querySelector(".slideshow-container").addEventListener("mouseover", stopSlideshow);
+document.querySelector(".slideshow-container").addEventListener("mouseleave", startSlideshow);
+//==============Slide Show/Banner section end here================
+    </script> -->
+
   <div class="container">
     <h3 style="font-size: clamp(1.1rem, calc(1.8vw + .17rem), 2rem); font-weight: 400; margin: 2rem; border-bottom: 1px solid lightgray;">Our All Product</h3>
     <div class="listProduct">  <!-- Product list -->  
