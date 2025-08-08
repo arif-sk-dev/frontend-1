@@ -49,7 +49,7 @@ header a.active {
 }
 
 .container {
-  margin: 7rem 2rem 2rem;
+  margin: 3rem 2rem 2rem;
   text-align: center;
   padding: 10px;
   transition: transform 0.5s;
@@ -249,11 +249,11 @@ header a.active {
 .overlay2 {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 1000;
+  z-index: 1100;
 }
 .overlay2.active {
   opacity: 1;
@@ -402,7 +402,7 @@ header a.active {
   
  /* main content mobile view */
   .container {
-    margin: 5rem 1rem 1rem;
+    margin: 3rem 1rem 1rem;
   }
  .container2 {
   margin: 3rem 1rem 1rem;
