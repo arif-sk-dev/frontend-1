@@ -130,6 +130,7 @@ navLinks.forEach(link => {
 
 
 //sidenav start here ===========
+// ====== SIDENAV OPEN/CLOSE ======
 const openNav = document.getElementById("openNav");
 const closeNav = document.getElementById("closeNav");
 const sideNav = document.getElementById("mySidenav");
@@ -149,116 +150,127 @@ overlay2?.addEventListener("click", () => {
   sideNav.classList.remove("active");
   overlay2.classList.remove("active");
 });
-//SideNav end here ==========
 
-
-// accordion section start here ============
-// Function to close the side navigation menu
+// ====== CLOSE SIDENAV FUNCTION ======
 const closeSidenav = () => {
-  const sideNav = document.getElementById("mySidenav");
-  const overlay2 = document.getElementById("overlay2");
+  sideNav?.classList.remove("active");
+  overlay2?.classList.remove("active");
+};
 
-  if (sideNav && overlay2) {
-    sideNav?.classList.remove("active");
-    overlay2?.classList.remove("active");
+// ====== ACCORDION TOGGLE ======
+const accordionToggles = document.querySelectorAll(".accordion-toggle");
+accordionToggles.forEach(button => {
+  button.addEventListener("click", () => {
+    const panel = button.nextElementSibling;
+    const isOpen = panel.style.maxHeight;
+
+    // Close all others
+    document.querySelectorAll(".accordion-panel").forEach(p => p.style.maxHeight = null);
+    document.querySelectorAll(".accordion-toggle").forEach(btn => btn.classList.remove("active"));
+
+    if (!isOpen) {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      button.classList.add("active");
+    }
+  });
+});
+
+// ====== LOAD ACCORDION LINKS WITH "ALL ITEMS" ======
+const loadAccordionLinks = () => {
+  fetch("products.json")
+    .then(res => res.json())
+    .then(data => {
+      const categories = ["baby", "women", "men"];
+
+      categories.forEach(category => {
+        const panel = document.getElementById(`${category}Panel`);
+        if (!panel) return;
+
+        panel.innerHTML = ""; // clear before adding links
+
+        // Count all items for the category
+        const categoryProducts = data.filter(p => p.category === category);
+        const allCount = categoryProducts.length;
+
+        // Create "All Items" link first
+        const allLink = document.createElement("a");
+        allLink.href = "#";
+        allLink.dataset.category = category;
+        allLink.dataset.type = "all";
+        allLink.textContent = `${category.charAt(0).toUpperCase() + category.slice(1)} All Items (${allCount})`;
+        allLink.addEventListener("click", e => {
+          e.preventDefault();
+          if (window.location.pathname.includes("product.html") || window.location.pathname === "/") {
+            filterProducts(category, "all");
+            closeSidenav();
+          } else {
+            window.location.href = `product.html?category=${category}&type=all`;
+          }
+        });
+        panel.appendChild(allLink);
+
+        // Now create individual type links
+        const types = Array.from(new Set(categoryProducts.map(p => p.type)));
+        types.forEach(type => {
+          const typeCount = categoryProducts.filter(p => p.type === type).length;
+          const link = document.createElement("a");
+          link.href = "#";
+          link.dataset.category = category;
+          link.dataset.type = type;
+          link.textContent = `${type.charAt(0).toUpperCase() + type.slice(1)} (${typeCount})`;
+
+          link.addEventListener("click", e => {
+            e.preventDefault();
+            if (window.location.pathname.includes("product.html") || window.location.pathname === "/") {
+              filterProducts(category, type);
+              closeSidenav();
+            } else {
+              window.location.href = `product.html?category=${category}&type=${type}`;
+            }
+          });
+          panel.appendChild(link);
+        });
+      });
+    });
+};
+
+// ====== FILTER PRODUCTS ======
+const filterProducts = (category, type) => {
+  fetch("products.json")
+    .then(res => res.json())
+    .then(data => {
+      let filtered;
+      if (type === "all") {
+        filtered = data.filter(product => product.category === category);
+      } else if (type === "other") {
+        filtered = data.filter(product =>
+          product.category === category &&
+          !["shirt", "pant", "tshirt", "bodysuits", "leggings", "joggers", "frocks", "scarves", "pajama", "shoe"].includes(product.type)
+        );
+      } else {
+        filtered = data.filter(product => product.category === category && product.type === type);
+      }
+
+      if (typeof addDataToHTML === 'function') {
+        addDataToHTML(filtered);
+      }
+    });
+};
+
+// ====== URL PARAM FILTER ON LOAD ======
+const checkURLForFilters = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('category');
+  const type = urlParams.get('type');
+
+  if (category && type) {
+    filterProducts(category, type);
   }
 };
 
-// FIXED: Add a check for the existence of elements before adding event listeners
-const accordionToggles = document.querySelectorAll(".accordion-toggle");
-if (accordionToggles.length > 0) {
-    accordionToggles.forEach(button => {
-        button.addEventListener("click", () => {
-            const panel = button.nextElementSibling;
-            const isOpen = panel.style.maxHeight;
-
-            // Close all other panels and remove 'active' class
-            document.querySelectorAll(".accordion-panel").forEach(p => p.style.maxHeight = null);
-            document.querySelectorAll(".accordion-toggle").forEach(btn => btn.classList.remove("active"));
-
-            // Toggle current panel
-            if (!isOpen) {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-                button.classList.add("active");
-            }
-        });
-    });
-}
-
-
-// Render accordion links dynamically
-const loadAccordionLinks = () => {
-    fetch("products.json")
-        .then(res => res.json())
-        .then(data => {
-            const categories = ["baby", "women", "men"];
-
-            categories.forEach(category => {
-                const panel = document.getElementById(`${category}Panel`);
-                // FIXED: Check if the panel exists before adding links
-                if (!panel) return; 
-                
-                const types = Array.from(new Set(data
-                    .filter(p => p.category === category)
-                    .map(p => p.type)));
-
-                types.forEach(type => {
-                    const link = document.createElement("a");
-                    link.href = "#";
-                    link.dataset.category = category;
-                    link.dataset.type = type;
-                    link.textContent = type.charAt(0).toUpperCase() + type.slice(1);
-                    link.addEventListener("click", e => {
-                        e.preventDefault();
-                        const isHomePage = window.location.pathname === '/' || window.location.pathname.includes('product.html');
-                        if (isHomePage) {
-                            filterProducts(category, type);
-                            // Add this line to close the side menu after filtering
-                            closeSidenav();
-                        } else {
-                            // Redirect to home page with parameters
-                            window.location.href = `product.html?category=${category}&type=${type}`;
-                        }
-                    });
-                    panel.appendChild(link);
-                });
-            });
-        });
-};
-
-// Filter products from accordion clicks
-const filterProducts = (category, type) => {
-    fetch("products.json")
-        .then(res => res.json())
-        .then(data => {
-            const filtered = data.filter(product =>
-                product.category === category && (
-                    type === "other"
-                        ? !["babyAllItems", "shirt", "pant", "tshirt", "bodysuits", "leggings", "joggers", "frocks", "scarves", "pajama", "shoe"].includes(product.type)
-                        : product.type === type
-                )
-            );
-            // Assuming this function exists on index.html
-            if (typeof addDataToHTML === 'function') {
-                addDataToHTML(filtered);
-            }
-        });
-};
-
-// Check for URL parameters on page load and filter products
-const checkURLForFilters = () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
-    const type = urlParams.get('type');
-
-    if (category && type) {
-        filterProducts(category, type);
-    }
-};
-
+// Init
 loadAccordionLinks();
-// On product.html, call the function to check for URL parameters
-if (window.location.pathname === '/' || window.location.pathname.includes('product.html')) {
-    checkURLForFilters();
+if (window.location.pathname.includes("product.html") || window.location.pathname === "/") {
+  checkURLForFilters();
 }
-// accordion section end here ============
+// // accordion section end here ============
