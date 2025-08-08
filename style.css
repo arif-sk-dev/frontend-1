@@ -73,18 +73,20 @@ header a.active {
   color: teal;
 }
 .ri-shopping-cart-2-line span {
-  font-size: 13px;
+  font-size: 11px;
   background-color: red;
   border-radius: 50px;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   top: 10px;
   left: 10px;
   color: white;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 .ri-shopping-cart-2-line span:hover {
   background-color: teal;
@@ -136,11 +138,11 @@ header a.active {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 1000;
+  z-index: 1101;
 }
 .overlay.active {
   opacity: 1;
@@ -157,7 +159,7 @@ header a.active {
   display: grid;
   grid-template-rows: 50px 1fr 50px;
   transition: 0.5s;
-  z-index: 1001;
+  z-index: 1102;
 }
 .cartTab.active {
   right: 0;
@@ -167,7 +169,7 @@ header a.active {
   padding: 10px;
   margin: 0;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .cartTab .btn {
   display: grid;
@@ -198,6 +200,7 @@ header a.active {
 .cartTab .listCart .item img {
   width: 100%;
   display: block;
+  aspect-ratio: 1/1;
   padding: 2px;
 }
 .cartTab .listCart .item {
@@ -234,6 +237,9 @@ header a.active {
 }
 .listCart {
   overflow: auto;
+}
+.listCart input {
+  border: 0.002px solid lightgray;
 }
 
 /* sideNav section start here  */

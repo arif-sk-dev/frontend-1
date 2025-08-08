@@ -166,7 +166,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
-  z-index: 1002;
+  z-index: 1102;
 }
 .popup-overlay.active {
   opacity: 1;
@@ -178,11 +178,14 @@ body {
   background-color: white;
   padding: 1rem 1rem 1rem 1.8rem;
   font-size: 14px;
+  /* word-spacing: 10px; */
+  justify-content: center;
+  align-items: center;
   /* max-width: 25dvw; */
   border-radius: 6px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   animation: fadeIn 0.3s ease-in-out;
-  z-index: 1002;
+  z-index: 1103;
 }
 #closeSizeGuide {
   position: absolute;
