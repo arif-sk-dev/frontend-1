@@ -10,36 +10,36 @@
 <body>
   <div id="header-placeholder"></div>
 
-  <!-- slideshow start here =================-->
-    <div class="slideshow-container">
-      <div class="slide fade"  data-url="baby.html">
-        <img src="image/banner/baby1.jpg" alt="">
-      </div>
-      <div class="slide fade" data-url="women.html">
-        <img src="image/banner/baby2.jpg" alt="">
-      </div>
-      <div class="slide fade" data-url="men.html">
-        <img src="image/banner/women1.jpg" alt="">
-      </div>
-      <div class="slide fade" data-url="">
-        <img src="image/banner/men.jpg" alt="">
-      </div>
-      <div class="slide fade" data-url="">
-        <img src="image/banner/women2.jpg" alt="">
-      </div>
-
-            <!-- Dot indicators -->
-      <div class="dots-container">
-        <span class="dot" onclick="setSlide(0)"></span>
-        <span class="dot" onclick="setSlide(1)"></span>
-        <span class="dot" onclick="setSlide(2)"></span>
-        <span class="dot" onclick="setSlide(3)"></span>
-        <span class="dot" onclick="setSlide(4)"></span>
-      </div>
+  <!-- slideshow start here ========-->
+  <div class="slideshow-container">
+    <div class="slide fade"  data-url="baby.html">
+      <img src="image/banner/baby1.jpg" alt="">
+    </div>
+    <div class="slide fade" data-url="baby.html">
+      <img src="image/banner/baby2.jpg" alt="">
+    </div>
+    <div class="slide fade" data-url="women.html">
+      <img src="image/banner/women1.jpg" alt="">
+    </div>
+    <div class="slide fade" data-url="men.html">
+      <img src="image/banner/men.jpg" alt="">
+    </div>
+    <div class="slide fade" data-url="women.html">
+      <img src="image/banner/women2.jpg" alt="">
     </div>
 
-    <!-- <script>
-      // ============Slide Show/Banner section start here ===========
+            <!-- Dot indicators -->
+    <div class="dots-container">
+      <span class="dot" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+      <span class="dot" onclick="setSlide(3)"></span>
+      <span class="dot" onclick="setSlide(4)"></span>
+    </div>
+  </div>  <!-- slideshow end here -->
+
+  <script>
+    // ============Slide Show/Banner section start here ===========
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 let currentIndex = 0;
@@ -89,11 +89,21 @@ startSlideshow();
       }
     });
 
+// ✅ Show the first slide immediately on page load
+showSlide(currentIndex);
+startSlideshow();
+
 // Pause on hover
 document.querySelector(".slideshow-container").addEventListener("mouseover", stopSlideshow);
 document.querySelector(".slideshow-container").addEventListener("mouseleave", startSlideshow);
 //==============Slide Show/Banner section end here================
-    </script> -->
+</script>
+
+  <div class="mainLink">
+    <div class="babyLink" onclick="window.location.href='baby.html'"><span>Baby Fashion</span></div>
+    <div class="womenLink" onclick="window.location.href='women.html'"><span>Women Fashion</span></div>
+    <div class="menLink" onclick="window.location.href='men.html'"><span>Men Fashion</span></div>
+  </div>
 
   <div class="container">
     <h3 style="font-size: clamp(1.1rem, calc(1.8vw + .17rem), 2rem); font-weight: 400; margin: 2rem; border-bottom: 1px solid lightgray;">Our All Product</h3>

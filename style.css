@@ -49,7 +49,7 @@ header a.active {
 }
 
 .container {
-  margin: 3rem 2rem 2rem;
+  margin: 0 2rem 2rem;
   text-align: center;
   padding: 10px;
   transition: transform 0.5s;
@@ -239,7 +239,7 @@ header a.active {
   background-color: #eee;
 }
 .listCart {
-  overflow: auto;
+  overflow: auto; 
 }
 .listCart input {
   border: 0.002px solid lightgray;
@@ -281,7 +281,7 @@ header a.active {
   overflow-x: hidden;
   transition: 0.4s ease;
   padding: 40px 10px 10px;
-  z-index: 1100;
+  z-index: 1101;
   color: white;
   font-size: 14px;
   transition: 0.4s;
@@ -439,9 +439,84 @@ header a.active {
   }
 /* =======Slide Show/Banner section end here========= */
 
+  /* Main link start here  */
+  .mainLink {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 6.5rem auto 0;
+    max-width: 800px;
+  }
+  .babyLink {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/baby/baby-shirt9.jpg);
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    align-items: stretch;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
+    transition: 0.3s ease-in-out;
+    border: 0.1px solid lightgray;
+  }
+  .womenLink {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/baby/baby-shirt18.jpg);
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
+    transition: 0.3s ease-in-out;
+    border: 0.1px solid lightgray;
+  }
+  .menLink {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/men/Screenshot_1.jpg);
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
+    transition: 0.3s ease-in-out;
+    border: 0.1px solid lightgray;
+  }
+  .babyLink:hover,
+  .womenLink:hover,
+  .menLink:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .mainLink .babyLink > span,
+  .mainLink .womenLink > span,
+  .mainLink .menLink > span {
+    position: relative;
+    bottom: -85%;
+    color: white;
+    font-size: clamp(0.6rem, calc(1vw + .1rem), 1.2rem);
+    font-weight: 400;
+  }
+  /* Main Link end here  */
+
 @media (300px <= width <=968px) {
   .menubar {
     display: block;
+  }
+  .mainLink {
+    margin: 4.5rem 1rem 0;
+    gap: 1rem;
+  }
+  .mainLink .babyLink > span,
+  .mainLink .womenLink > span,
+  .mainLink .menLink > span {
+    bottom: -70%;
   }
 
   .slideshow-container {
@@ -466,7 +541,7 @@ header a.active {
   
  /* main content mobile view */
   .container {
-    margin: 2rem 1rem 1rem;
+    margin: 0 1rem 1rem;
   }
  .container2 {
   margin: 3rem 1rem 1rem;
@@ -475,7 +550,7 @@ header a.active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    margin: 0;
+    margin: 4.5rem 0;
   }
    .sidebar {
     display: none;
