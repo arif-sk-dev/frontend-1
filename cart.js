@@ -159,8 +159,8 @@ const closeSidenav = () => {
   const overlay2 = document.getElementById("overlay2");
 
   if (sideNav && overlay2) {
-    sideNav.classList.remove("active");
-    overlay2.classList.remove("active");
+    sideNav?.classList.remove("active");
+    overlay2?.classList.remove("active");
   }
 };
 
@@ -210,14 +210,14 @@ const loadAccordionLinks = () => {
                     link.textContent = type.charAt(0).toUpperCase() + type.slice(1);
                     link.addEventListener("click", e => {
                         e.preventDefault();
-                        const isHomePage = window.location.pathname === '/' || window.location.pathname.includes('index.html');
+                        const isHomePage = window.location.pathname === '/' || window.location.pathname.includes('product.html');
                         if (isHomePage) {
                             filterProducts(category, type);
                             // Add this line to close the side menu after filtering
                             closeSidenav();
                         } else {
                             // Redirect to home page with parameters
-                            window.location.href = `index.html?category=${category}&type=${type}`;
+                            window.location.href = `product.html?category=${category}&type=${type}`;
                         }
                     });
                     panel.appendChild(link);
@@ -234,7 +234,7 @@ const filterProducts = (category, type) => {
             const filtered = data.filter(product =>
                 product.category === category && (
                     type === "other"
-                        ? !["shirt", "pant", "tshirt", "bodysuits", "leggings", "joggers", "frocks", "scarves", "pajama", "shoe"].includes(product.type)
+                        ? !["babyAllItems", "shirt", "pant", "tshirt", "bodysuits", "leggings", "joggers", "frocks", "scarves", "pajama", "shoe"].includes(product.type)
                         : product.type === type
                 )
             );
@@ -257,8 +257,8 @@ const checkURLForFilters = () => {
 };
 
 loadAccordionLinks();
-// On index.html, call the function to check for URL parameters
-if (window.location.pathname === '/' || window.location.pathname.includes('index.html')) {
+// On product.html, call the function to check for URL parameters
+if (window.location.pathname === '/' || window.location.pathname.includes('product.html')) {
     checkURLForFilters();
 }
 // accordion section end here ============
