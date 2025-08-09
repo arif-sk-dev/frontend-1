@@ -46,7 +46,7 @@ const showMoreBtn = document.querySelector(".showMoreBtn");
 
 let products = [];
 let displayedProductsCount = 0;
-const productsToShowInitially = 10; 
+const productsToShowInitially = 10;
 const productsPerLoad = 8; 
 
 const addDataToHTML = (productsToDisplay, append = false) => {
