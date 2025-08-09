@@ -40,43 +40,43 @@
 
   <script>
     // ============Slide Show/Banner section start here ===========
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot");
-let currentIndex = 0;
-let intervalId;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    let currentIndex = 0;
+    let intervalId;
 
-function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  dots.forEach(dot => dot.classList.remove("active"));
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      dots.forEach(dot => dot.classList.remove("active"));
     
-  slides[index].classList.add("active");
-  dots[index].classList.add("active");
-}
+      slides[index].classList.add("active");
+      dots[index].classList.add("active");
+    }
 
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-}
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
 
-function startSlideshow() {
-  intervalId = setInterval(nextSlide, 4000); // Change every 3 seconds
-}
+    function startSlideshow() {
+      intervalId = setInterval(nextSlide, 4000); // Change every 3 seconds
+    }
 
-function stopSlideshow() {
-  clearInterval(intervalId);
-}
+    function stopSlideshow() {
+      clearInterval(intervalId);
+    }
 
-function setSlide(index) {
-  stopSlideshow(); // Stop auto-play when manually selected
-  currentIndex = index;
-  showSlide(index);
-  startSlideshow();
-}
+    function setSlide(index) {
+      stopSlideshow(); // Stop auto-play when manually selected
+      currentIndex = index;
+      showSlide(index);
+      startSlideshow();
+    }
 
-// Start slideshow on page load
-startSlideshow();
+    // Start slideshow on page load
+    startSlideshow();
 
-//Url link to all slide individually
+    //Url link to all slide individually
     const slideshowContainer = document.querySelector(".slideshow-container");
     slideshowContainer.addEventListener('click', () => {
                 // Get the currently active slide (the one with the 'active' class)
@@ -89,15 +89,15 @@ startSlideshow();
       }
     });
 
-// ✅ Show the first slide immediately on page load
-showSlide(currentIndex);
-startSlideshow();
+    // ✅ Show the first slide immediately on page load
+    showSlide(currentIndex);
+    startSlideshow();
 
-// Pause on hover
-// document.querySelector(".slideshow-container").addEventListener("mouseover", stopSlideshow);
-// document.querySelector(".slideshow-container").addEventListener("mouseleave", startSlideshow);
-//==============Slide Show/Banner section end here================
-</script>
+    // Pause on hover
+    // document.querySelector(".slideshow-container").addEventListener("mouseover", stopSlideshow);
+    // document.querySelector(".slideshow-container").addEventListener("mouseleave", startSlideshow);
+    //==============Slide Show/Banner section end here================
+  </script>
 
   <div class="mainLink">
     <div class="babyLink" onclick="window.location.href='baby.html'"><span>Baby Fashion</span></div>
@@ -114,6 +114,17 @@ startSlideshow();
         <div class="price">$200</div>
         <button class="addCart">Add To Cart</button> -->
       </div>
+    </div>
+  </div>
+
+  <div class="leaflets">
+    <div class="leaflet">
+      <p>11111111 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in veritatis animi sequi nemo necessitatibus! Ducimus dignissimos eos magni provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, enim debitis quod nobis minus voluptatibus blanditiis nihil perspiciatis dolorem obcaecati non provident corrupti inventore! Perspiciatis perferendis explicabo aliquid sequi natus harum qui aspernatur quia rem vero hic blanditiis autem obcaecati minima, vel corrupti earum placeat. Rerum ipsa dicta consequuntur cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae aperiam aut architecto deserunt rerum distinctio cumque unde? Laborum, eligendi. Fugiat iure iusto quae quasi, ad at debitis dolorem ab repellendus autem non illum iure maxime nostrum cupiditate molestias iusto. Tempora dolorum iste aperiam, placeat, iusto necessitatibus nisi incidunt unde aliquam vero aut!</p>
+      <img src="image/baby/baby-shirt10.jpg" alt="">
+    </div>
+    <div class="leaflet leaflet2">
+      <img src="image/baby/baby-shirt19.jpg" alt="">
+      <p>222222222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatibus eaque vel cum. Rem enim harum praesentium, aliquid beatae aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil iste assumenda dolores molestias ducimus, delectus dolor! At sint recusandae non dolorem cupiditate doloribus nesciunt amet laudantium repellat necessitatibus perspiciatis atque esse similique ex, odio, totam, quibusdam aliquam! Iure repudiandae dolorum quod, voluptatum quae voluptas reiciendis illo cupiditate tempore. At aperiam atque harum beatae reprehenderit perferendis deleniti eius fugit sunt, fuga velit modi eligendi, sapiente quos nam laudantium quidem ducimus dolorum cum saepe. Quam eligendi placeat quaerat veniam explicabo velit amet. Dolores aliquid inventore velit tempora expedita aliquam, quaerat cupiditate, perferendis eaque rerum, laborum libero magni praesentium suscipit incidunt ipsum ipsam.</p>
     </div>
   </div>
 

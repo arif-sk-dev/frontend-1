@@ -505,6 +505,29 @@ header a.active {
   }
   /* Main Link end here  */
 
+  /* leaflets start here  */
+  .leaflets {
+    margin: 2.5rem;
+  }
+  .leaflet {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: beige;
+  }
+  .leaflet > img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+
+  }
+  .leaflet > p {
+    text-align: justify;
+    padding: 2rem;
+    font-size:  clamp(0.5rem, calc(1.1vw + .1rem), 1.3rem);
+  }
+  /* leaflets end here  */
+
 @media (300px <= width <=968px) {
   .menubar {
     display: block;
@@ -560,5 +583,22 @@ header a.active {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin: 2.8rem 1rem 1rem;
+  }
+  .leaflets {
+    margin: 1rem;
+  }
+  .leaflet {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .leaflet2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .leaflet > p {
+    padding: 0.5rem;
+  }
+  .leaflet > img {
+    aspect-ratio: 16/9;
   }
 }
