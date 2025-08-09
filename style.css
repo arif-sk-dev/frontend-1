@@ -134,6 +134,7 @@ header a.active {
 .listProduct .item button:hover {
   background-color: teal;
   color: white;
+  text-shadow: 0 0 7px black;
 }
 
 .overlay {
@@ -530,7 +531,7 @@ header a.active {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    background-color: beige;
+    background-color: #ededed;
   }
   .leaflet > img {
     width: 100%;
