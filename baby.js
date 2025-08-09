@@ -206,7 +206,7 @@ fetch("products.json")
         // Types to count
         const types = [
             "shirt", "pant", "tshirt", "bodysuits", "leggings",
-            "joggers", "frocks", "scarves", "pajama", "shoe"
+            "frocks", "scarves", "pajama", "shoe"
         ];
 
         // Count each type dynamically
@@ -250,8 +250,7 @@ const showAllBabyProducts = () => {
 // Filter baby products by type
 const filterBabyProductsByType = (type) => {
     const types = [
-        "shirt", "pant", "tshirt", "bodysuits", "leggings",
-        "joggers", "frocks", "scarves", "pajama", "shoe"
+        "shirt", "pant", "tshirt", "bodysuits", "leggings", "frocks", "scarves", "pajama", "shoe"
     ];
 
     const filteredProducts = allProducts.filter(product =>
