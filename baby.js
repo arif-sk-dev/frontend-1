@@ -1,116 +1,264 @@
 
-// Get the product list container
+// // Get the product list container
+// const listProductHTML = document.querySelector(".listProduct");
+
+// // Function to display products
+// const addDataToHTML = (products) => {
+//   listProductHTML.innerHTML = ""; // Clear current content
+
+//   products.forEach(product => {
+//     const newProduct = document.createElement("div");
+//     newProduct.classList.add("item");
+//     newProduct.dataset.id = product.id;
+
+//     const firstImage = Array.isArray(product.image) ? product.image[0] : product.image;
+
+//     newProduct.innerHTML = `
+//       <a href="detail.html?id=${product.id}" style="text-decoration: none; color: black;">
+//         <img src="${firstImage}" alt="${product.name}">
+//         <h3>${product.name}</h3>
+//         <div class="price">$${product.price}</div>
+//       </a>
+//       <button class="addCart">Add To Cart</button>
+//     `;
+//     listProductHTML.appendChild(newProduct);
+//   });
+// };
+
+// // Add to cart via delegation
+// listProductHTML.addEventListener("click", (event) => {
+//   if (event.target.classList.contains("addCart")) {
+//     const product_id = event.target.closest(".item").dataset.id;
+//     window.addToCart(product_id); // Global cart function from header.html
+//   }
+// });
+
+// // Load baby products initially
+// const initApp = () => {
+//   fetch("products.json")
+//     .then(res => res.json())
+//     .then(data => {
+//       const babyProducts = data.filter(product => product.category === "baby");
+//       addDataToHTML(babyProducts);
+//     });
+// };
+// initApp();
+
+// // ====== Baby product counts ======
+// fetch("products.json")
+//   .then(res => res.json())
+//   .then(data => {
+//     const babyProducts = data.filter(product => product.category === "baby");
+
+//     // Total baby product count
+//     const babyItemCount = babyProducts.length;
+//     document.getElementById("allItem").innerHTML = `Baby all Product: ${babyItemCount} items`;
+//     document.getElementById("baby-all-items").innerHTML = babyItemCount;
+
+//     // Types to count
+//     const types = [
+//       "shirt", "pant", "tshirt", "bodysuits", "leggings",
+//       "joggers", "frocks", "scarves", "pajama", "shoe"
+//     ];
+
+//     // Count each type dynamically
+//     types.forEach(type => {
+//       const count = babyProducts.filter(product => product.type === type).length;
+//       document.getElementById(`${type}Count`).innerHTML = count;
+//     });
+
+//     // Count "other" types
+//     const otherCount = babyProducts.filter(product => !types.includes(product.type)).length;
+//     document.getElementById("otherCount").innerHTML = otherCount;
+//   });
+
+// // ====== Sidebar category filtering ======
+// document.querySelectorAll('.sidebar-link').forEach(link => {
+//   link.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     const selectedType = event.target.dataset.type;
+
+//     if (selectedType === "babyAllItems") {
+//       showAllBabyProducts();
+//     } else {
+//       filterBabyProductsByType(selectedType);
+//     }
+//   });
+// });
+
+// // Show all baby products
+// const showAllBabyProducts = () => {
+//   fetch("products.json")
+//     .then(res => res.json())
+//     .then(data => {
+//       const babyProducts = data.filter(product => product.category === "baby");
+//       addDataToHTML(babyProducts);
+//     });
+// };
+
+// // Filter baby products by type
+// const filterBabyProductsByType = (type) => {
+//   fetch("products.json")
+//     .then(res => res.json())
+//     .then(data => {
+//       const types = [
+//         "shirt", "pant", "tshirt", "bodysuits", "leggings",
+//         "joggers", "frocks", "scarves", "pajama", "shoe"
+//       ];
+
+//       const filteredProducts = data.filter(product =>
+//         product.category === "baby" &&
+//         (type === "other" ? !types.includes(product.type) : product.type === type)
+//       );
+
+//       addDataToHTML(filteredProducts);
+//     });
+// };
+
+// after show more button function then that previous code changes below
+// Get the product list container and the show more button
 const listProductHTML = document.querySelector(".listProduct");
+const showMoreBtn = document.querySelector(".showMoreBtn");
+
+let allProducts = []; // Store all products from the JSON file
+let currentProducts = []; // Store the currently filtered products to display
+let displayedProductsCount = 0;
+const productsPerLoad = 8; // Number of products to load each time
 
 // Function to display products
-const addDataToHTML = (products) => {
-  listProductHTML.innerHTML = ""; // Clear current content
+const addDataToHTML = (productsToDisplay, append = false) => {
+    if (!append) {
+        listProductHTML.innerHTML = ""; // Clear current content
+        displayedProductsCount = 0;
+    }
 
-  products.forEach(product => {
-    const newProduct = document.createElement("div");
-    newProduct.classList.add("item");
-    newProduct.dataset.id = product.id;
+    const productsChunk = productsToDisplay.slice(displayedProductsCount, displayedProductsCount + productsPerLoad);
 
-    const firstImage = Array.isArray(product.image) ? product.image[0] : product.image;
+    productsChunk.forEach(product => {
+        const newProduct = document.createElement("div");
+        newProduct.classList.add("item");
+        newProduct.dataset.id = product.id;
 
-    newProduct.innerHTML = `
-      <a href="detail.html?id=${product.id}" style="text-decoration: none; color: black;">
-        <img src="${firstImage}" alt="${product.name}">
-        <h3>${product.name}</h3>
-        <div class="price">$${product.price}</div>
-      </a>
-      <button class="addCart">Add To Cart</button>
-    `;
-    listProductHTML.appendChild(newProduct);
-  });
+        const firstImage = Array.isArray(product.image) ? product.image[0] : product.image;
+
+        newProduct.innerHTML = `
+            <a href="detail.html?id=${product.id}" style="text-decoration: none; color: black;">
+                <img src="${firstImage}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <div class="price">$${product.price}</div>
+            </a>
+            <button class="addCart">Add To Cart</button>
+        `;
+        listProductHTML.appendChild(newProduct);
+    });
+
+    displayedProductsCount += productsChunk.length;
+    
+    // Hide/show the "Show More" button based on whether all products are displayed
+    if (displayedProductsCount >= productsToDisplay.length) {
+        showMoreBtn.style.display = "none";
+    } else {
+        showMoreBtn.style.display = "block";
+    }
 };
 
 // Add to cart via delegation
 listProductHTML.addEventListener("click", (event) => {
-  if (event.target.classList.contains("addCart")) {
-    const product_id = event.target.closest(".item").dataset.id;
-    window.addToCart(product_id); // Global cart function from header.html
-  }
+    if (event.target.classList.contains("addCart")) {
+        const product_id = event.target.closest(".item").dataset.id;
+        window.addToCart(product_id); // Global cart function from header.html
+    }
+});
+
+// Event listener for the "Show More" button
+showMoreBtn.addEventListener("click", () => {
+    addDataToHTML(currentProducts, true);
 });
 
 // Load baby products initially
 const initApp = () => {
-  fetch("products.json")
-    .then(res => res.json())
-    .then(data => {
-      const babyProducts = data.filter(product => product.category === "baby");
-      addDataToHTML(babyProducts);
-    });
+    fetch("products.json")
+        .then(res => res.json())
+        .then(data => {
+            allProducts = data;
+            const babyProducts = allProducts.filter(product => product.category === "baby");
+            currentProducts = babyProducts; // Set the initial product list for "Show More"
+            addDataToHTML(babyProducts);
+        });
 };
 initApp();
 
 // ====== Baby product counts ======
 fetch("products.json")
-  .then(res => res.json())
-  .then(data => {
-    const babyProducts = data.filter(product => product.category === "baby");
+    .then(res => res.json())
+    .then(data => {
+        const babyProducts = data.filter(product => product.category === "baby");
 
-    // Total baby product count
-    const babyItemCount = babyProducts.length;
-    document.getElementById("allItem").innerHTML = `Baby all Product: ${babyItemCount} items`;
-    document.getElementById("baby-all-items").innerHTML = babyItemCount;
+        // Total baby product count
+        const babyItemCount = babyProducts.length;
+        document.getElementById("allItem").innerHTML = `Baby all Product: ${babyItemCount} items`;
+        // Assuming 'baby-all-items' exists in your HTML
+        const babyAllItemsElement = document.getElementById("baby-all-items");
+        if(babyAllItemsElement) {
+             babyAllItemsElement.innerHTML = babyItemCount;
+        }
 
-    // Types to count
-    const types = [
-      "shirt", "pant", "tshirt", "bodysuits", "leggings",
-      "joggers", "frocks", "scarves", "pajama", "shoe"
-    ];
+        // Types to count
+        const types = [
+            "shirt", "pant", "tshirt", "bodysuits", "leggings",
+            "joggers", "frocks", "scarves", "pajama", "shoe"
+        ];
 
-    // Count each type dynamically
-    types.forEach(type => {
-      const count = babyProducts.filter(product => product.type === type).length;
-      document.getElementById(`${type}Count`).innerHTML = count;
+        // Count each type dynamically
+        types.forEach(type => {
+            const count = babyProducts.filter(product => product.type === type).length;
+            const countElement = document.getElementById(`${type}Count`);
+            if (countElement) {
+                countElement.innerHTML = count;
+            }
+        });
+
+        // Count "other" types
+        const otherCount = babyProducts.filter(product => !types.includes(product.type)).length;
+        const otherCountElement = document.getElementById("otherCount");
+        if(otherCountElement) {
+            otherCountElement.innerHTML = otherCount;
+        }
     });
-
-    // Count "other" types
-    const otherCount = babyProducts.filter(product => !types.includes(product.type)).length;
-    document.getElementById("otherCount").innerHTML = otherCount;
-  });
 
 // ====== Sidebar category filtering ======
 document.querySelectorAll('.sidebar-link').forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-    const selectedType = event.target.dataset.type;
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const selectedType = event.target.dataset.type;
 
-    if (selectedType === "babyAllItems") {
-      showAllBabyProducts();
-    } else {
-      filterBabyProductsByType(selectedType);
-    }
-  });
+        if (selectedType === "babyAllItems") {
+            showAllBabyProducts();
+        } else {
+            filterBabyProductsByType(selectedType);
+        }
+    });
 });
 
 // Show all baby products
 const showAllBabyProducts = () => {
-  fetch("products.json")
-    .then(res => res.json())
-    .then(data => {
-      const babyProducts = data.filter(product => product.category === "baby");
-      addDataToHTML(babyProducts);
-    });
+    const babyProducts = allProducts.filter(product => product.category === "baby");
+    currentProducts = babyProducts;
+    addDataToHTML(babyProducts);
 };
 
 // Filter baby products by type
 const filterBabyProductsByType = (type) => {
-  fetch("products.json")
-    .then(res => res.json())
-    .then(data => {
-      const types = [
+    const types = [
         "shirt", "pant", "tshirt", "bodysuits", "leggings",
         "joggers", "frocks", "scarves", "pajama", "shoe"
-      ];
+    ];
 
-      const filteredProducts = data.filter(product =>
+    const filteredProducts = allProducts.filter(product =>
         product.category === "baby" &&
         (type === "other" ? !types.includes(product.type) : product.type === type)
-      );
+    );
 
-      addDataToHTML(filteredProducts);
-    });
+    currentProducts = filteredProducts;
+    addDataToHTML(filteredProducts);
 };

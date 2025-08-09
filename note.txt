@@ -1,3 +1,10 @@
 
 footer section margin will  set 2rem,
-because this margin already set in all other  page's some main container mergin.
+because this margin already set in all other  page's some main container margin.
+
+show More button added successfully.
+
+header and sideNav designed in cart.js file
+accordion's all function designed in cart.js file
+
+

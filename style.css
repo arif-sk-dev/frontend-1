@@ -513,9 +513,8 @@ header a.active {
     color: white;
     padding: 7px 18px;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+    margin: 2rem auto 0;
+    text-shadow: 0 0 5px black;
     cursor: pointer;
     transition: 0.3s ease-in-out;
   }
