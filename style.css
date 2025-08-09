@@ -452,6 +452,7 @@ header a.active {
     text-align: center;
     margin: 6.5rem auto 0;
     max-width: 800px;
+    text-shadow: 0 0 4px black;
   }
   .babyLink {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/baby/baby-shirt9.jpg);
@@ -526,7 +527,19 @@ header a.active {
   /* leaflets start here  */
   .leaflets {
     margin: 2.5rem;
+    /* animation: fadeIn 1s ease-in-out; */
+    opacity: 0;
+    transform: scale(0.4);
+    transition: opacity 0.4s ease, transform 0.4s ease;
   }
+  .leaflets.visible {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: scale(1); }
+}
+
   .leaflet {
     display: grid;
     grid-template-columns: 50% 50%;

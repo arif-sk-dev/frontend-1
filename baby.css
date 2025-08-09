@@ -28,7 +28,6 @@
   text-align: center;
   background-color: rgb(228, 223, 223);
   border-radius: 50px;
-
 }
 .sidebar>li>a {
   display: block;
@@ -46,5 +45,5 @@
   margin-top: 0;
 }
 
-@media (350px <= width <=968px) {
-}
+/* @media (350px <= width <=968px) {
+} */
