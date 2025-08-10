@@ -136,7 +136,7 @@ document.querySelector(".similar-products").addEventListener("click", (event) =>
 });
 // ✅ similar product rendering end here ========
 
-// for leaflet section's opacity fade in - fade out animation set start here 
+// for similar-list section's opacity fade in - fade out animation set start here 
 document.addEventListener("DOMContentLoaded", () => {
   const target = document.querySelector(".similar-list");
 
@@ -153,4 +153,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(target);
 });
-// for leaflet section's opacity fade in - fade out animation set end here 
+// for similar-list section's opacity fade in - fade out animation set end here 
