@@ -7,5 +7,7 @@ show More button added successfully.
 header and sideNav designed in cart.js file
 accordion's all function designed in cart.js file
 
-total 52 product added. [ last added baby leggings ]
+total 62 product added. [ last added baby leggings ]
+
+
 

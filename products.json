@@ -14,6 +14,34 @@
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users, you accept the User whereby you grant a non-exclusive license for the use of the same."
   },
   {
+    "id": 60,
+    "name": "Baby Frock",
+    "price": 67.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks29.jpg",
+      "image/baby/baby-frocks30.jpg",
+      "image/baby/baby-frocks31.jpg",
+      "image/baby/baby-frocks32.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 61,
+    "name": "Baby Frock",
+    "price": 57,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks33.jpg",
+      "image/baby/baby-frocks34.jpg",
+      "image/baby/baby-frocks35.jpg",
+      "image/baby/baby-frocks36.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
     "id": 49,
     "name": "Baby Leggings",
     "price": 57.50,
@@ -166,6 +194,20 @@
       "image/baby/baby-shirt8.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 57,
+    "name": "Baby Frock",
+    "price": 63.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks17.jpg",
+      "image/baby/baby-frocks18.jpg",
+      "image/baby/baby-frocks19.jpg",
+      "image/baby/baby-frocks20.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 3,
@@ -731,6 +773,106 @@
       "image/baby/baby-leggings20.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 53,
+    "name": "Baby Frock",
+    "price": 63.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks1.jpg",
+      "image/baby/baby-frocks2.jpg",
+      "image/baby/baby-frocks3.jpg",
+      "image/baby/baby-frocks4.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 54,
+    "name": "Baby Frock",
+    "price": 53.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks5.jpg",
+      "image/baby/baby-frocks6.jpg",
+      "image/baby/baby-frocks7.jpg",
+      "image/baby/baby-frocks8.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 55,
+    "name": "Baby Frock",
+    "price": 43.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks9.jpg",
+      "image/baby/baby-frocks10.jpg",
+      "image/baby/baby-frocks11.jpg",
+      "image/baby/baby-frocks12.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 56,
+    "name": "Baby Frock",
+    "price": 63.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks13.jpg",
+      "image/baby/baby-frocks14.jpg",
+      "image/baby/baby-frocks15.jpg",
+      "image/baby/baby-frocks16.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
+    "id": 58,
+    "name": "Baby Frock",
+    "price": 63.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks21.jpg",
+      "image/baby/baby-frocks22.jpg",
+      "image/baby/baby-frocks23.jpg",
+      "image/baby/baby-frocks24.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 59,
+    "name": "Baby Frock",
+    "price": 73.50,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks25.jpg",
+      "image/baby/baby-frocks26.jpg",
+      "image/baby/baby-frocks27.jpg",
+      "image/baby/baby-frocks28.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
+    "id": 62,
+    "name": "Baby Frock",
+    "price": 54.60,
+    "category": "baby",
+    "type": "frocks",
+    "image": [
+      "image/baby/baby-frocks37.jpg",
+      "image/baby/baby-frocks38.jpg",
+      "image/baby/baby-frocks39.jpg",
+      "image/baby/baby-frocks40.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   
   
