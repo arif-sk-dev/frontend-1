@@ -135,3 +135,22 @@ document.querySelector(".similar-products").addEventListener("click", (event) =>
   }
 });
 // ✅ similar product rendering end here ========
+
+// for leaflet section's opacity fade in - fade out animation set start here 
+document.addEventListener("DOMContentLoaded", () => {
+  const target = document.querySelector(".similar-list");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Optional: stop observing after animation
+      }
+    });
+  }, {
+    threshold: 0.4 // Adjust based on how much of the element should be visible
+  });
+
+  observer.observe(target);
+});
+// for leaflet section's opacity fade in - fade out animation set end here 
