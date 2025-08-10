@@ -250,7 +250,7 @@ body {
   transition: opacity 0.9s ease, transform 0.9s ease;
   opacity: 0;
   transform: translateY(100px);
-  transform: scale(0.4);
+  /* transform: scale(0.4); */
 }
 .similar-list.visible {   /* JS code to work */
   /* animation: fadeIn 1s ease-in-out forwards; */

@@ -1,5 +1,19 @@
 [
   {
+    "id": 71,
+    "name": "Shari",
+    "price": 200,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari33.jpg",
+      "image/women/shari34.jpg",
+      "image/women/shari35.jpg",
+      "image/women/shari36.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
     "id": 46,
     "name": "women top",
     "price": 113.50,
@@ -42,6 +56,35 @@
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
+    "id": 70,
+    "name": "Shari",
+    "price": 110,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari29.jpg",
+      "image/women/shari30.jpg",
+      "image/women/shari31.jpg",
+      "image/women/shari32.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 63,
+    "name": "Shari",
+    "price": 158.60,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari1.jpg",
+      "image/women/shari2.jpg",
+      "image/women/shari3.jpg",
+      "image/women/shari4.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
     "id": 49,
     "name": "Baby Leggings",
     "price": 57.50,
@@ -54,6 +97,20 @@
       "image/baby/baby-leggings8.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 67,
+    "name": "Shari",
+    "price": 128.60,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari17.jpg",
+      "image/women/shari18.jpg",
+      "image/women/shari19.jpg",
+      "image/women/shari20.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 50,
@@ -110,6 +167,20 @@
       "image/women/women-top40.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 65,
+    "name": "Shari",
+    "price": 178.60,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari9.jpg",
+      "image/women/shari10.jpg",
+      "image/women/shari11.jpg",
+      "image/women/shari12.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 43,
@@ -180,6 +251,20 @@
       "image/baby/baby-shirt4.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 64,
+    "name": "Shari",
+    "price": 168.60,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari5.jpg",
+      "image/women/shari6.jpg",
+      "image/women/shari7.jpg",
+      "image/women/shari8.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 2,
@@ -434,6 +519,20 @@
       "image/baby/baby-shirt4.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 66,
+    "name": "Shari",
+    "price": 128.60,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari13.jpg",
+      "image/women/shari14.jpg",
+      "image/women/shari15.jpg",
+      "image/women/shari16.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 20,
@@ -875,6 +974,49 @@
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   
+  {
+    "id": 68,
+    "name": "Shari",
+    "price": 201,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari21.jpg",
+      "image/women/shari22.jpg",
+      "image/women/shari23.jpg",
+      "image/women/shari24.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 69,
+    "name": "Shari",
+    "price": 118.60,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari25.jpg",
+      "image/women/shari26.jpg",
+      "image/women/shari27.jpg",
+      "image/women/shari28.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
+    "id": 72,
+    "name": "Shari",
+    "price": 158.60,
+    "category": "women",
+    "type": "shari",
+    "image": [
+      "image/women/shari37.jpg",
+      "image/women/shari38.jpg",
+      "image/women/shari39.jpg",
+      "image/women/shari40.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
   
 
 
