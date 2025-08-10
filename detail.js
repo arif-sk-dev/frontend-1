@@ -148,7 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    threshold: 0.4 // Adjust based on how much of the element should be visible
+    threshold: 0.05 // Adjust based on how much of the element should be visible
+    // rootMargin: "0px 0px -100px 0px"
   });
 
   observer.observe(target);
