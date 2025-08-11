@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 18,
+  "editor.fontSize": 19,
   "editor.fontFamily": "IBM Plex Mono",
   "files.autoSave": "afterDelay",
   "editor.wordWrap": "on",
@@ -7,5 +7,6 @@
   "editor.mouseWheelZoom": true,
   "editor.fontWeight": "200",
   "editor.overtypeCursorStyle": "line",
-  "editor.cursorBlinking": "expand"
+  "editor.cursorBlinking": "expand",
+  "terminal.integrated.fontSize": 16
 }

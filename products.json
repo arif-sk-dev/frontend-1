@@ -28,6 +28,20 @@
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users, you accept the User whereby you grant a non-exclusive license for the use of the same."
   },
   {
+    "id": 77,
+    "name": "Baby Shoe",
+    "price": 58.60,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe17.jpg",
+      "image/baby/baby-shoe18.jpg",
+      "image/baby/baby-shoe19.jpg",
+      "image/baby/baby-shoe20.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
     "id": 60,
     "name": "Baby Frock",
     "price": 67.50,
@@ -56,6 +70,20 @@
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
+    "id": 88,
+    "name": "Kaftan",
+    "price": 132,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan25.jpg",
+      "image/women/kaftan26.jpg",
+      "image/women/kaftan27.jpg",
+      "image/women/kaftan28.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
     "id": 70,
     "name": "Shari",
     "price": 110,
@@ -66,6 +94,20 @@
       "image/women/shari30.jpg",
       "image/women/shari31.jpg",
       "image/women/shari32.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 76,
+    "name": "Baby Shoe",
+    "price": 88.8,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe13.jpg",
+      "image/baby/baby-shoe14.jpg",
+      "image/baby/baby-shoe15.jpg",
+      "image/baby/baby-shoe16.jpg"
     ],
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
@@ -97,6 +139,20 @@
       "image/baby/baby-leggings8.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 89,
+    "name": "Kaftan",
+    "price": 132,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan29.jpg",
+      "image/women/kaftan30.jpg",
+      "image/women/kaftan31.jpg",
+      "image/women/kaftan32.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 67,
@@ -168,6 +224,22 @@
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
   },
+  
+  {
+    "id": 79,
+    "name": "Baby Shoe",
+    "price": 58.60,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe25.jpg",
+      "image/baby/baby-shoe26.jpg",
+      "image/baby/baby-shoe27.jpg",
+      "image/baby/baby-shoe28.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
   {
     "id": 65,
     "name": "Shari",
@@ -225,6 +297,20 @@
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
   },
   {
+    "id": 80,
+    "name": "Baby Shoe",
+    "price": 58,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe29.jpg",
+      "image/baby/baby-shoe30.jpg",
+      "image/baby/baby-shoe31.jpg",
+      "image/baby/baby-shoe32.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
     "id": 39,
     "name": "women top",
     "price": 113.50,
@@ -263,6 +349,20 @@
       "image/women/shari6.jpg",
       "image/women/shari7.jpg",
       "image/women/shari8.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 82,
+    "name": "Kaftan",
+    "price": 122,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan1.jpg",
+      "image/women/kaftan2.jpg",
+      "image/women/kaftan3.jpg",
+      "image/women/kaftan4.jpg"
     ],
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
@@ -379,6 +479,20 @@
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
   },
+  {
+    "id": 78,
+    "name": "Baby Shoe",
+    "price": 58.60,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe21.jpg",
+      "image/baby/baby-shoe22.jpg",
+      "image/baby/baby-shoe23.jpg",
+      "image/baby/baby-shoe24.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
   
   {
     "id": 10,
@@ -437,6 +551,21 @@
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
   },
   {
+    "id": 83,
+    "name": "Kaftan",
+    "price": 132,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan5.jpg",
+      "image/women/kaftan6.jpg",
+      "image/women/kaftan7.jpg",
+      "image/women/kaftan8.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
     "id": 14,
     "name": "LD06 Lounge Dress",
     "price": 160,
@@ -491,6 +620,20 @@
       "image/baby/baby-shirt12.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 85,
+    "name": "Kaftan",
+    "price": 92,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan13.jpg",
+      "image/women/kaftan14.jpg",
+      "image/women/kaftan15.jpg",
+      "image/women/kaftan16.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 18,
@@ -577,6 +720,20 @@
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
   },
   {
+    "id": 73,
+    "name": "Baby Shoe",
+    "price": 58.60,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe1.jpg",
+      "image/baby/baby-shoe2.jpg",
+      "image/baby/baby-shoe3.jpg",
+      "image/baby/baby-shoe4.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
     "id": 23,
     "name": "Long Pant",
     "price": 120,
@@ -645,6 +802,20 @@
       "image/baby/bodysuits5.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 84,
+    "name": "Kaftan",
+    "price": 123,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan9.jpg",
+      "image/women/kaftan10.jpg",
+      "image/women/kaftan11.jpg",
+      "image/women/kaftan12.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 28,
@@ -729,6 +900,20 @@
       "image/women/women-top4.jpg"
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
+  },
+  {
+    "id": 75,
+    "name": "Baby Shoe",
+    "price": 38.60,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe9.jpg",
+      "image/baby/baby-shoe10.jpg",
+      "image/baby/baby-shoe11.jpg",
+      "image/baby/baby-shoe12.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
   {
     "id": 34,
@@ -1014,6 +1199,79 @@
       "image/women/shari38.jpg",
       "image/women/shari39.jpg",
       "image/women/shari40.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
+    "id": 74,
+    "name": "Baby Shoe",
+    "price": 79,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe5.jpg",
+      "image/baby/baby-shoe6.jpg",
+      "image/baby/baby-shoe7.jpg",
+      "image/baby/baby-shoe8.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
+    "id": 81,
+    "name": "Baby Shoe",
+    "price": 63.50,
+    "category": "baby",
+    "type": "shoe",
+    "image": [
+      "image/baby/baby-shoe33.jpg",
+      "image/baby/baby-shoe34.jpg",
+      "image/baby/baby-shoe35.jpg",
+      "image/baby/baby-shoe36.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  
+  {
+    "id": 86,
+    "name": "Kaftan",
+    "price": 132,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan17.jpg",
+      "image/women/kaftan18.jpg",
+      "image/women/kaftan19.jpg",
+      "image/women/kaftan20.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+  {
+    "id": 87,
+    "name": "Kaftan",
+    "price": 132,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan21.jpg",
+      "image/women/kaftan22.jpg",
+      "image/women/kaftan23.jpg",
+      "image/women/kaftan24.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },  
+  {
+    "id": 90,
+    "name": "Kaftan",
+    "price": 132,
+    "category": "women",
+    "type": "kaftan",
+    "image": [
+      "image/women/kaftan33.jpg",
+      "image/women/kaftan34.jpg",
+      "image/women/kaftan35.jpg",
+      "image/women/kaftan36.jpg"
     ],
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
