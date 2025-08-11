@@ -1,9 +1,11 @@
 {
-  "editor.fontSize": 21,
-  "editor.fontFamily": "Monaspace",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "IBM Plex Mono",
   "files.autoSave": "afterDelay",
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
   "editor.mouseWheelZoom": true,
-  "editor.fontWeight": "200"
+  "editor.fontWeight": "200",
+  "editor.overtypeCursorStyle": "line",
+  "editor.cursorBlinking": "expand"
 }

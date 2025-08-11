@@ -455,7 +455,7 @@ header a.active {
     text-shadow: 0 0 4px black;
   }
   .babyLink {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/baby/baby-shirt9.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/baby/baby-leggings9.jpg);
     display: block;
     width: 100%;
     background-size: cover;
@@ -468,7 +468,7 @@ header a.active {
     border: 0.1px solid lightgray;
   }
   .womenLink {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/baby/baby-shirt18.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/women/women-top30.jpg);
     display: block;
     width: 100%;
     background-size: cover;
