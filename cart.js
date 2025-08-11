@@ -273,4 +273,20 @@ loadAccordionLinks();
 if (window.location.pathname.includes("product.html") || window.location.pathname === "/") {
   checkURLForFilters();
 }
-// // accordion section end here ============
+// accordion section end here ============
+
+// Hide & Show navbar on Scrolling 
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  const header = document.getElementsByClassName("headerShadow")[0];
+
+  if (prevScrollpos > currentScrollPos) {
+    // document.getElementsByClassName("headerShadow").style.top = "0";
+    header.style.top = "0";
+  } else {
+    // document.getElementsByClassName("headerShadow").style.top = "-70px";
+    header.style.top = "-70px";
+  }
+  prevScrollpos = currentScrollPos;
+};

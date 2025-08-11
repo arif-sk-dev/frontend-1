@@ -22,6 +22,9 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 1100;
+  top: 0;
+  position: fixed;
+  transition: top 0.3s ease-in-out;
 }
 .sticky-nav {
   z-index: 1100;
