@@ -114,3 +114,23 @@ const initApp = () => {
 };
 
 initApp();
+
+
+// for Leaflet section's opacity fade in - fade out animation set start here 
+document.addEventListener("DOMContentLoaded", () => {
+  const target = document.querySelector(".leaflets");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Optional: stop observing after animation
+      }
+    });
+  }, {
+    threshold: 0.05 // Adjust based on how much of the element should be visible
+    // rootMargin: "0px 0px -100px 0px"
+  });
+
+  observer.observe(target);
+});

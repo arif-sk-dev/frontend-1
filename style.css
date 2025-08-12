@@ -82,7 +82,7 @@ header a.active {
 }
 
 .container {
-  margin: 0 2rem 2rem;
+  margin: 5rem 2rem 0;
   text-align: center;
   padding: 10px;
   transition: transform 0.5s;
@@ -640,11 +640,12 @@ header a.active {
   }
   .search-btn {
     color: white;
+    font-weight: 200;
   }
   
  /* main content mobile view */
   .container {
-    margin: 0 1rem 1rem;
+    margin: 2rem 1rem 0;
   }
  .container2 {
   margin: 3rem 1rem 1rem;
