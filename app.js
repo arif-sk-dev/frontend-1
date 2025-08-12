@@ -5,7 +5,7 @@ const showMoreBtn = document.querySelector(".showMoreBtn");
 let products = [];
 let displayedProductsCount = 0;
 const productsToShowInitially = 10;
-const productsPerLoad = 8;
+const productsPerLoad = 10;
 
 const addDataToHTML = (productsToDisplay, append = false) => {
     // Check if the listProductHTML element exists before trying to manipulate it
@@ -89,7 +89,7 @@ const searchProducts = (query) => {
 
 const initApp = () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const searchQuery = urlParams.get('q'); // for search
+    const searchQuery = urlParams.get('q'); //Search function added to initApp() section
 
     if (searchQuery) {
         searchProducts(searchQuery);
