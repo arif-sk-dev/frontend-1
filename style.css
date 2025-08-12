@@ -55,7 +55,6 @@ header a.active {
 #searchForm {
   display: flex;
   justify-content: space-between;
-  gap: 5px;
   align-items: center;
   height: 30px;
   border: 1px solid gray;
@@ -64,7 +63,7 @@ header a.active {
 
 }
 .searchField {
-  padding: 7px 3.2rem 7px 7px;
+  padding: 7px 3.5rem 7px 7px;
   border: none;
   border-radius: 5px;
 }
