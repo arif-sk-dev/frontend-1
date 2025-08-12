@@ -52,6 +52,39 @@ header a.active {
   border-bottom: 2px solid teal;
 }
 
+#searchForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 210px;
+  border: 1px solid gray;
+  background-color: inherit;
+  border-radius: 5px;
+
+}
+.searchField {
+  /* height: 40px; */
+  padding: 7px;
+  width: 170px;
+  border: none;
+  border-radius: 5px;
+}
+.search-btn {
+  padding-right: 7px;
+  padding-left: 7px;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: inherit;
+  border: none;
+}
+.search-btn:hover {
+  color: green;
+  font-weight: bold;
+}
+
 .container {
   margin: 0 2rem 2rem;
   text-align: center;
