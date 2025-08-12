@@ -294,18 +294,18 @@ window.onscroll = function() {
 
 // handle the global search functionality
 const handleGlobalSearch = () => {
-    const searchForm = document.getElementById("searchForm");
-    const searchInput = document.querySelector(".searchField");
+  const searchForm = document.getElementById("searchForm");
+  const searchInput = document.querySelector(".searchField");
 
-    searchForm?.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const query = searchInput.value.trim();
-        if (query) {
-            // Redirect to the product page with a search query in the URL
-            window.location.href = `product.html?q=${encodeURIComponent(query)}`;
-        }
-    });
+  searchForm?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const query = searchInput.value.trim();
+    if (query) {
+      // Redirect to the product page with a search query in the URL
+      window.location.href = `product.html?q=${encodeURIComponent(query)}`;
+    }
+  });
 };
 
-// Call the new search function
+// Call the search function
 handleGlobalSearch();
