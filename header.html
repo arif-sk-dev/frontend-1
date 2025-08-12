@@ -31,6 +31,12 @@
   <div id="mySidenav" class="sidenav">
     <i class="ri-close-large-line close-sidenav" id="closeNav"></i>
     <div class="category-accordion">
+      <search>
+        <form id="searchForm" action="product.html" method="GET">
+          <input class="searchField" type="text" placeholder="Search here..." name="q" />
+          <button type="submit" class="search-btn"><i class="ri-search-line"></i></button>
+        </form>
+      </search>
       <a href="index.html">HOME</a>
       <button class="accordion-toggle" data-category="baby">BABY</button>
       <div class="accordion-panel" id="babyPanel"></div>

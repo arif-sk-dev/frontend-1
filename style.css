@@ -55,24 +55,20 @@ header a.active {
 #searchForm {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
   align-items: center;
   height: 30px;
-  width: 210px;
   border: 1px solid gray;
   background-color: inherit;
   border-radius: 5px;
 
 }
 .searchField {
-  /* height: 40px; */
-  padding: 7px;
-  width: 170px;
+  padding: 7px 3.2rem 7px 7px;
   border: none;
   border-radius: 5px;
 }
 .search-btn {
-  padding-right: 7px;
-  padding-left: 7px;
   cursor: pointer;
   color: black;
   font-size: 18px;
@@ -633,6 +629,17 @@ header a.active {
   }
   header {
     display: none;
+  }
+
+  #searchForm {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .search-btn {
+    color: white;
   }
   
  /* main content mobile view */
