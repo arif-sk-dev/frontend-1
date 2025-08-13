@@ -63,10 +63,10 @@ header a.active {
 
 }
 .searchField {
-  padding: 7px 3.5rem 7px 7px;
+  padding: 6px 3.5rem 6px 7px;
   border: none;
   border-radius: 5px;
-  color: gray;
+  /* color: gray; */
 }
 .search-btn {
   cursor: pointer;
@@ -637,6 +637,9 @@ header a.active {
     width: 100%;
     margin-top: 0.4rem;
     margin-bottom: 1rem;
+  }
+  .searchField {
+    color: lightgray;
   }
   .search-btn {
     color: white;

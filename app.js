@@ -62,28 +62,39 @@ if (showMoreBtn) {
 
 // Search button function start
 const searchProducts = (query) => {
-    fetch("products.json")
-        .then(res => res.json())
-        .then(data => {
-            const filteredProducts = data.filter(product => {
-                const lowerCaseQuery = query.toLowerCase();
-                
-                // Add checks for each property to ensure it's not undefined
-                const nameMatch = product.name?.toLowerCase().includes(lowerCaseQuery) || false;
-                const descriptionMatch = product.description?.toLowerCase().includes(lowerCaseQuery) || false;
-                const categoryMatch = product.category?.toLowerCase().includes(lowerCaseQuery) || false;
-                const typeMatch = product.type?.toLowerCase().includes(lowerCaseQuery) || false;
+  fetch("products.json")
+    .then(res => res.json())
+    .then(data => {
+      const lowerCaseQuery = query.toLowerCase();
+      // Define a threshold for how many mistakes (edits) are allowed.
+      // For short words, 1 is a good value.
+      const threshold = 1; 
 
-                return nameMatch || descriptionMatch || categoryMatch || typeMatch;
-            });
+      const filteredProducts = data.filter(product => {
+        // Create an array of properties to check
+        const propertiesToCheck = [
+          product.name,
+          product.description,
+          product.category,
+          product.type
+        ];
 
-            // Hide the 'Show More' button if search results are displayed
-            if (showMoreBtn) {
-                showMoreBtn.style.display = "none";
-            }
+        // Check if any of the properties are a "fuzzy match"
+        return propertiesToCheck.some(prop => {
+          if (!prop) return false; // Skip if the property is undefined
 
-            addDataToHTML(filteredProducts);
+          // Calculate the distance and see if it's within the threshold
+          return levenshteinDistance(prop.toLowerCase(), lowerCaseQuery) <= threshold;
         });
+      });
+
+      // Hide the 'Show More' button if search results are displayed
+      if (showMoreBtn) {
+        showMoreBtn.style.display = "none";
+      }
+
+      addDataToHTML(filteredProducts);
+    });
 };
 
 
@@ -114,6 +125,35 @@ const initApp = () => {
 };
 
 initApp();
+
+// Function to calculate Levenshtein distance [search field's]
+// If client wrong type in the searchbar then execute product smoothly
+const levenshteinDistance = (str1, str2) => {
+  const m = str1.length;
+  const n = str2.length;
+  const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(null));
+
+  for (let i = 0; i <= m; i++) {
+    dp[i][0] = i;
+  }
+
+  for (let j = 0; j <= n; j++) {
+    dp[0][j] = j;
+  }
+
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,      // Deletion character
+        dp[i][j - 1] + 1,      // Insertion character
+        dp[i - 1][j - 1] + cost // Substitution character as a word
+      );
+    }
+  }
+
+  return dp[m][n];
+};
 
 
 // for Leaflet section's opacity fade in - fade out animation set start here 

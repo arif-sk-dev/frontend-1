@@ -175,7 +175,7 @@ accordionToggles.forEach(button => {
   });
 });
 
-// ====== LOAD ACCORDION LINKS WITH "ALL ITEMS" ======
+// ====== Load accordion link with all items ======
 const loadAccordionLinks = () => {
   fetch("products.json")
     .then(res => res.json())
@@ -293,7 +293,7 @@ window.onscroll = function() {
 
 
 // handle the global search functionality
-const handleGlobalSearch = () => {
+const Search = () => {
   const searchForm = document.getElementById("searchForm");
   const searchInput = document.querySelector(".searchField");
 
@@ -306,6 +306,5 @@ const handleGlobalSearch = () => {
     }
   });
 };
-
 // Call the search function
-handleGlobalSearch();
+Search();
