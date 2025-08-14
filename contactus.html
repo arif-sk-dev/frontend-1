@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
-  <!-- <link rel="stylesheet" href="baby.css"> -->
+  <link rel="stylesheet" href="style.css">
   <title>contact-us</title>
 
   <style>
@@ -13,7 +12,7 @@
     }
         body {
             font-family: 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
+            /* margin: 0; */
             background-color: #fdfdfd;
             color: #333;
             box-sizing: border-box;
@@ -34,16 +33,16 @@
             margin-bottom: 1.5rem;
             font-size: 1rem;
             line-height: 1.6;
-            animation: fadeIn 0.5s ease-in;
+            animation: fadeIn 1.4s ease-in;
         }
-        form {
+        .form2 {
             display: flex;
             flex-direction: column;
             gap: 1rem;
             box-sizing: border-box;
             width: 100%;
             margin: auto;
-            animation: fadeIn 0.8s ease-in;
+            animation: fadeIn 2s ease-in;
         }
         .inpt, .txtarea {
             padding: 0.75rem;
@@ -67,6 +66,16 @@
         button:hover {
           background-color: #d53d76;
         }
+        .success-message {
+          background-color: #d4edda;
+          color: #155724;
+          border: 1px solid #c3e6cb;
+          padding: 15px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+          text-align: center;
+        }
+
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
@@ -78,9 +87,11 @@
 
     <div class="contact-container">
       <h1>Contact Us</h1>
-      <p>Got questions about a product, an order, or just want to say hello? We’d love to hear from you. Fill out the form below or email us directly at <strong>support@ourmail.com</strong>.</p>
+      <p>Got questions about a product, an order, or just want to say hello? We’d love to hear from you. Fill out the form below or email us directly at <strong>support@ahcloth.com</strong>.</p>
+
+      <div id="success-message" class="success-message" style="display: none;">✅ We accepted your message and will notify you later. Thank you!</div>
             
-      <form action="#" method="POST">
+      <form class="form2" id="form2" action="#" method="POST">
         <input class="inpt" type="text" name="name" placeholder="Your Name" required />
         <input class="inpt" type="email" name="email" placeholder="Your Email" required />
         <textarea class="txtarea" name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -92,6 +103,6 @@
   <div id="footer-placeholder"></div>
   <script src="loadHeader.js"></script>
   <script src="loadFooter.js"></script>
-  <!-- <script src="baby.js"></script>   -->
+  <script src="contactus.js"></script>
 </body>
 </html>
