@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 22,
+  "editor.fontSize": 18.5,
   "editor.fontFamily": "IBM Plex Mono",
   "editor.fontLigatures": true,
   "files.autoSave": "afterDelay",
@@ -9,9 +9,17 @@
   "editor.fontWeight": "400",
   "editor.overtypeCursorStyle": "line",
   "editor.cursorBlinking": "expand",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 15,
   "json.schemas": [
 
 
-  ]
+  ],
+  "terminal.integrated.fontFamily": "IBM Plex Mono",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "line",
+  "terminal.integrated.cursorWidth": 1,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.accessibleViewPreserveCursorPosition": false
 }

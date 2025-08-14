@@ -233,9 +233,12 @@ header a.active {
 }
 
 .cartTab .listCart .item img {
-  width: 100%;
+  /* width: 100%; */
+  /* display: block; */
+  width: 45px;
+  height: 45px;
   display: block;
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
   padding: 2px;
 }
 .cartTab .listCart .item {

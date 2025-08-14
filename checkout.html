@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="checkout-container">
-    <h2 style="font-size: clamp(1.3rem, calc(1.8vw + .17rem), 2rem);">Order Summary</h2>
+    <h2 style="font-size: clamp(1.3rem, calc(1.8vw + .17rem), 2rem); border-bottom: 1px solid lightgray;">Order Summary</h2>
     <div id="checkout-items"></div>
     <div class="checkout-total">Total: $<span id="total-amount">0.00</span></div>
 
@@ -20,7 +20,7 @@
       <input type="text" placeholder="Address" required>
       <button type="submit">Place Order</button>
     </form>
-  </div>
+  </div> 
 
   <!-- Footer placeholder -->
   <div id="footer-placeholder"></div>
@@ -35,12 +35,23 @@
   border-radius: 6px;
 }
 
+.product-image {
+  width: 22px;
+  height: 22px;
+  object-fit: cover; /* Prevents the image from being distorted */
+  border: 0.001px solid lightgray;
+  border-radius: 5px; /* Optional: adds a slight curve to the corners */
+}
+
 #checkout-items .item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 0.3fr 5fr 0.8fr;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
   /* margin-bottom: 7px; */
   /* border-bottom: 0.1px solid #ddd; */
-  padding-bottom: 5px;
+  padding: 5px;
 }
 #checkout-items {
   margin-bottom: 20px;
@@ -57,6 +68,7 @@
   text-align: right;
   font-size: clamp(1rem, calc(1.5vw + .17rem), 1.5rem);
   background-color: aquamarine;
+  margin-bottom: 3rem;
   /* margin: 10px 0; */
 }
 
@@ -80,6 +92,7 @@ form button {
   padding: 10px;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 2rem;
 }
 form button:hover {
   opacity: 1;

@@ -1,4 +1,4 @@
-// Form input validation start here 
+// Input validation start here 
 document.getElementById('order-form').addEventListener('submit', function(e) {
     const mobile = document.getElementById('mobile').value;
     const email = document.getElementById('email').value;
@@ -16,9 +16,9 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
       e.preventDefault();
     }
   });
-// Form input validation end here ========
+// Input validation end here ========
 
-//checkout.js
+
 const checkoutContainer = document.getElementById("checkout-items");
 const totalAmount = document.getElementById("total-amount");
 
@@ -34,8 +34,10 @@ const renderCheckout = () => {
     total += itemTotal;
 
     const item = document.createElement("div");
+    const firstImage = Array.isArray(product.image) ? product.image[0] : product.image;
     item.className = "item";
     item.innerHTML = `
+      <img src="${firstImage}" alt="${product.name}" class="product-image">
       <div>${product.name} x ${cart.quantity}</div>
       <div>$${itemTotal.toFixed(2)}</div>
     `;
