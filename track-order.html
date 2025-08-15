@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Your Order</title>
+  <style>
+    :root {
+      /* --bg-light: #f9f9f9;
+      --bg-dark: #1e1e1e;
+      --text-light: #333;
+      --text-dark: #eee; */
+      --accent: #4caf50;
+      --pending: #ccc;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    } */
+
+    .trackOrderContainer {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      background: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .status {
+      margin-top: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    ul.timeline {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    ul.timeline li {
+      padding: 0.6rem 1rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid var(--pending);
+      background: #f1f1f1;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    ul.timeline li.completed {
+      border-left-color: var(--accent);
+      background: #e6ffe6;
+    }
+
+    @media (300px <= width <=968px) {
+      .trackOrderContainer {
+        margin: 3rem 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="trackOrderContainer">
+    <h2>Track Your Order</h2>
+    <input type="text" id="orderId" placeholder="Enter your Order ID [e.g: A1011, B2022, C3033 or, D4044]" />
+    <button onclick="trackOrder()">Track Order</button>
+    <div class="status" id="statusBox"></div>
+    <ul class="timeline" id="timeline"></ul>
+  </div>
+  <script src="track-order.js"></script>
+</body>
+</html>
