@@ -122,7 +122,7 @@ const showMoreBtn = document.querySelector(".showMoreBtn");
 
 let allProducts = []; // Store all products from the JSON file
 let currentProducts = []; // Store the currently filtered products to display
-let displayedProductsCount = 0;
+let displayedProductsCount = 8;
 const productsPerLoad = 8; // Number of products to load each time
 
 // Function to display products

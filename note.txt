@@ -8,7 +8,6 @@ accordion's all function designed in cart.js file
 ** search input/button section execution in the cart.js file // handle the global search functionality
 ** search input/button section logic in the app.js file which is work from product.js/product page.
 
+welcome message added
 
-
-total 90 product added. [ last added Women Kaftan ]
-nest day work schedule > track order page addition 
+total 119 product added. [ last added Men Polo ]
