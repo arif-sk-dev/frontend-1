@@ -10,4 +10,4 @@ accordion's all function designed in cart.js file
 
 welcome message added
 
-total 129 product added. [ last added Men Polo ]
+total 149 product added. [ last added Men blazer ]
