@@ -138,10 +138,13 @@ header a.active {
   gap: 40px;
 }
 .listProduct .item {
-  /* background-color: #eeeee6; */
   padding: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px lightgray;
+  transition: 0.3s ease-in-out;
+}
+.listProduct .item:hover {
+  transform: scale(1.05);
 }
 .listProduct .item h3 {
   font-size: 14px;
