@@ -10,4 +10,6 @@ accordion's all function designed in cart.js file
 
 welcome message added
 
-total 149 product added. [ last added Men blazer ]
+total 183 product added. [ last added Men Leather Jacket ]
+
+
