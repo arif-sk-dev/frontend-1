@@ -654,7 +654,7 @@ header a.active {
   
  /* main content mobile view */
   .container {
-    margin: 2rem 1rem 0;
+    margin: 2rem 0.5rem 0;
   }
  .container2 {
   margin: 3rem 1rem 1rem;
