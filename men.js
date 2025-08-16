@@ -154,6 +154,16 @@ const addDataToHTML = (productsToDisplay, append = false) => {
     } else {
         showMoreBtn.style.display = "block";
     }
+
+    // If any product not found
+    if (productsChunk.length === 0) {
+    listProductHTML.innerHTML = `
+      <div class="no-product">
+        <p style="text-align: center; font-style: italic; color: #777; font-size:24px">No product found.</p>
+      </div>
+    `;
+    return;
+    }
 };
 
 // ====== Enable Add To Cart logic ======

@@ -129,7 +129,7 @@ const productsPerLoad = 8; // Number of products to load each time
 const addDataToHTML = (productsToDisplay, append = false) => {
     if (!append) {
         listProductHTML.innerHTML = ""; // Clear current content
-        displayedProductsCount = 0;
+        displayedProductsCount = 0; 
     }
 
     const productsChunk = productsToDisplay.slice(displayedProductsCount, displayedProductsCount + productsPerLoad);
@@ -159,6 +159,16 @@ const addDataToHTML = (productsToDisplay, append = false) => {
         showMoreBtn.style.display = "none";
     } else {
         showMoreBtn.style.display = "block";
+    }
+
+    // If any product not found
+    if (productsChunk.length === 0) {
+    listProductHTML.innerHTML = `
+      <div class="no-product">
+        <p style="text-align: center; font-style: italic; color: #777; font-size:24px">No product found.</p>
+      </div>
+    `;
+    return;
     }
 };
 
