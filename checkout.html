@@ -12,6 +12,14 @@
     <div id="checkout-items"></div>
     <div class="checkout-total">Total: $<span id="total-amount">0.00</span></div>
 
+    <div id="confirmation-message" style="display: none;">
+      <div class="message-content">
+        <h2>🎉 Thank You for Your Order!</h2>
+        <p>✅ Your order has been submitted successfully.</p>
+        <p>✅ You will receive a confirmation email shortly.</p>
+      </div>
+    </div>
+
     <form id="order-form">
       <h3 style="font-size: clamp(1.1rem, calc(1.5vw + .17rem), 1.5rem);">Customer Info</h3>
       <input type="text" placeholder="Name" required>
@@ -46,11 +54,9 @@
 #checkout-items .item {
   display: grid;
   grid-template-columns: 0.3fr 5fr 0.8fr;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  /* justify-content: space-between; */
-  /* margin-bottom: 7px; */
-  /* border-bottom: 0.1px solid #ddd; */
   padding: 5px;
 }
 #checkout-items {
@@ -61,13 +67,13 @@
 }
 #checkout-items .item:nth-child(even) {
   /* background-color: rgb(203, 245, 245); */
-  background-color: #eee;
+  background-color: #e3f9ea;
 }
 
 .checkout-total {
   text-align: right;
-  font-size: clamp(1rem, calc(1.5vw + .17rem), 1.5rem);
-  background-color: aquamarine;
+  font-size: clamp(1rem, calc(1.4vw + .17rem), 1.4rem);
+  background-color: #eee;
   margin-bottom: 3rem;
   /* margin: 10px 0; */
 }
@@ -98,17 +104,41 @@ form button:hover {
   opacity: 1;
 }
 
+/* Message box  */
+#confirmation-message {
+  text-align: center;
+  padding: 40px;
+  background-color: #f0fdf4; /* A light green background for a positive feel */
+  border: 1px solid #a3e635; /* A bright green border */
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.message-content h2 {
+  color: #16a34a; /* Darker green for the heading */
+  margin-bottom:7px;
+  font-size: clamp(1.2rem, calc(1.4vw + .17rem), 1.9rem);
+}
+.message-content p {
+  color: #333;
+  font-size: clamp(0.75rem, calc(1.1vw + .17rem), 1.5rem);
+}
+
 /* small screen device  */
 @media (350px <= width <=968px) {
   .checkout-container {
-    margin: 1.5rem;
+    margin: .5rem;
+    padding: 10px;
+  }
+  #confirmation-message {
+    /* margin: .5rem; */
+    padding: 6px;
   }
 }
   </style>
 
   <script src="cart.js"></script>
   <script src="checkout.js"></script>
-  <!-- <script src="loadHeader.js"></script> -->
   <script src="loadFooter.js"></script>
 </body>
 </html>

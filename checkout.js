@@ -21,6 +21,8 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
 
 const checkoutContainer = document.getElementById("checkout-items");
 const totalAmount = document.getElementById("total-amount");
+const orderForm = document.getElementById("order-form");
+const confirmationMessage = document.getElementById("confirmation-message");
 
 const renderCheckout = () => {
   checkoutContainer.innerHTML = "";
@@ -38,8 +40,8 @@ const renderCheckout = () => {
     item.className = "item";
     item.innerHTML = `
       <img src="${firstImage}" alt="${product.name}" class="product-image">
-      <div>${product.name} x ${cart.quantity}</div>
-      <div>$${itemTotal.toFixed(2)}</div>
+      <div>${product.name} x ${cart.quantity} pcs.</div>
+      <div style="text-align:right;">$${itemTotal.toFixed(2)}</div>
     `;
     checkoutContainer.appendChild(item);
   });
@@ -49,13 +51,19 @@ const renderCheckout = () => {
 
 document.getElementById("order-form").addEventListener("submit", e => {
   e.preventDefault();
-  alert("✅ Order submitted successfully!");
-  carts = [];
+  // alert("✅ Order submitted successfully!");
+  carts = []; //reset the cart
   localStorage.setItem("cart", JSON.stringify(carts));
   renderCheckout();
+
+  //Hide the form & show the welcome message
+  orderForm.style.display = "none";
+  confirmationMessage.style.display = "block";
+  document.querySelector(".checkout-total").style.display = "none";
 });
 
 // Wait for global cart to load 
 setTimeout(() => {
   renderCheckout();
 }, 450);
+
