@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>contact-us</title>
 
   <style>
-    * {
+    /* * {
       box-sizing: border-box;
-    }
+    } */
         body {
             font-family: 'Segoe UI', Roboto, sans-serif;
             /* margin: 0; */
@@ -44,7 +44,7 @@
             margin: auto;
             animation: fadeIn 2s ease-in;
         }
-        .inpt, .txtarea {
+        #inpt, #txtarea {
             padding: 0.75rem;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -52,7 +52,7 @@
             width: 100%;
             box-sizing: border-box;
         }
-        .buttn {
+        #buttn {
             width: 100%;
             padding: 0.75rem;
             background-color: #ea4c89;
@@ -63,7 +63,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        button:hover {
+        #buttn:hover {
           background-color: #d53d76;
         }
         .success-message {
@@ -92,10 +92,10 @@
       <div id="success-message" class="success-message" style="display: none;">✅ We accepted your message and will notify you later. Thank you!</div>
             
       <form class="form2" id="form2" action="#" method="POST">
-        <input class="inpt" type="text" name="name" placeholder="Your Name" required />
-        <input class="inpt" type="email" name="email" placeholder="Your Email" required />
-        <textarea class="txtarea" name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button class="buttn" type="submit">Send Message</button>
+        <input id="inpt" type="text" name="name" placeholder="Your Name" required />
+        <input id="inpt" type="email" name="email" placeholder="Your Email" required />
+        <textarea id="txtarea" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button id="buttn" type="submit">Send Message</button>
       </form>
     </div>
 
