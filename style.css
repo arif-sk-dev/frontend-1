@@ -603,6 +603,31 @@ header a.active {
   }
   /* leaflets end here  */
 
+    /* photo Gallery */
+  .photoGallery {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem; */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 16rem;
+    justify-content: stretch;
+    gap: 1.5rem;
+    margin: 2.5rem;
+    animation: animate 10s linear infinite;
+  }
+
+  @keyframes animate {
+    to { translate: calc(-5 * 16rem); }
+  }
+
+  .photoGallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1/1;
+  }
+
 @media (300px <= width <=968px) {
   .menubar {
     display: block;
@@ -690,5 +715,12 @@ header a.active {
   }
   .leaflet > img {
     aspect-ratio: 16/9;
+  }
+
+  .photoGallery {
+    grid-auto-columns: 8rem;
+    margin-top: 0;
+    gap: 0.5rem;
+
   }
 }
