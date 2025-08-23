@@ -604,29 +604,41 @@ header a.active {
   /* leaflets end here  */
 
     /* photo Gallery */
-  .photoGallery {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem; */
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 16rem;
-    justify-content: stretch;
-    gap: 1.5rem;
-    margin: 2.5rem;
-    animation: animate 10s linear infinite;
-  }
+.photoGallery {
+  overflow: hidden;
+  padding: 0 2rem 2rem;
+  background-color: #fff;
+}
 
-  @keyframes animate {
-    to { translate: calc(-5 * 16rem); }
-  }
+.photoTrack {
+  display: flex;
+  gap: 1.5rem;
+  animation: scrollGallery 30s linear infinite;
+}
 
-  .photoGallery img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    aspect-ratio: 1/1;
+.photoTrack img {
+  width: 16rem;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+@keyframes scrollGallery {
+   to {
+    translate: calc(-22 * 16rem);
+   }
+
+   /* 0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  } */
+
+}
 
 @media (300px <= width <=968px) {
   .menubar {
@@ -717,10 +729,14 @@ header a.active {
     aspect-ratio: 16/9;
   }
 
-  .photoGallery {
-    grid-auto-columns: 8rem;
+  .photoTrack {
     margin-top: 0;
     gap: 0.5rem;
-
+  }
+  .photoTrack img {
+    width: 7rem;
+  }
+  .photoGallery {
+    padding-top: 0;
   }
 }
