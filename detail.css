@@ -26,6 +26,7 @@ body {
   width: 100%;
   display: block;
   aspect-ratio: 1/1;
+  cursor: pointer;
 }
 .img-section img {
   border: .1px solid lightgray;
@@ -228,6 +229,32 @@ body {
 }
  /* product details end here =========== */
 
+/* Full Screen Image section start here ====== */
+.fullscreen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 1); */
+  background-color: #252525;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200;
+}
+
+.fullscreen img {
+  width: 90%;
+  /* display: block; */
+  height: 90%;
+  object-fit: contain;
+  cursor: pointer;
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); */
+  transition: transform 0.3s ease-in-out;
+}
+/* Full Screen Image section end here ====== */
+
  /* Similar Product Section start here ====== */
 .similar-products {
   margin: 3rem;
@@ -309,5 +336,8 @@ body {
    }
    .similar-list {
     gap: 25px;
+   }
+   .fullscreen img {
+    margin: 1rem;
    }
  }

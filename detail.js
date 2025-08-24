@@ -155,3 +155,25 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(target);
 });
 // for similar-list section's opacity fade in - fade out animation set end here 
+
+// Full Screen Image section start here ===========
+function openFullscreen(imgElement) {
+  const viewer = document.getElementById("fullscreenViewer");
+  const fullImg = document.getElementById("fullscreenImage");
+  fullImg.src = imgElement.src;
+  viewer.style.display = "flex";
+}
+
+function closeFullscreen() {
+  document.getElementById("fullscreenViewer").style.display = "none";
+}
+document.getElementById("main-img").addEventListener("click", function () {
+  openFullscreen(this);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeFullscreen();
+  }
+});
+// Full Screen Image section end here ============
