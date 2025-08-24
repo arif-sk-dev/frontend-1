@@ -41,16 +41,35 @@ header {
   /* padding: 20px; */
 }
 a {
+  position: relative;
   text-decoration: none;
   font-weight: 600;
   color: black;
 }
 
-header a:hover,
+/* Pseudo-element for bottom border */
+header a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  width: 0%;
+  background-color: goldenrod;
+  transition: width 0.3s ease-in-out;
+}
+header a.active::after {
+  width: 100%;
+}
+header a.active {
+  color: teal;
+}
+
+/* header a:hover,
 header a.active {
   color: teal;
   border-bottom: 2px solid teal;
-}
+} */
 
 #searchForm {
   display: flex;
