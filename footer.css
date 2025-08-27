@@ -124,6 +124,7 @@ input {
   display: block;
   aspect-ratio: 19/5;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .footer-3 {
