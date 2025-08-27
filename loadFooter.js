@@ -5,4 +5,4 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(html => {
       document.getElementById("footer-placeholder").innerHTML = html;
     });
-});
+}); 
