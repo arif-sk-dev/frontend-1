@@ -922,20 +922,7 @@
     ],
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
-  {
-    "id": 168,
-    "name": "Women Sandal",
-    "price": 76.50,
-    "category": "women",
-    "type": "shoe",
-    "image": [
-      "image/women/women-shoe5.jpg",
-      "image/women/women-shoe6.jpg",
-      "image/women/women-shoe5.jpg",
-      "image/women/women-shoe6.jpg"
-    ],
-    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
-  },
+  
   {
     "id": 6,
     "name": "LD06 Lounge Dress",
@@ -1005,6 +992,21 @@
       "image/men/jacket4.jpg",
       "image/men/jacket3.jpg",
       "image/men/jacket4.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+
+  {
+    "id": 168,
+    "name": "Women Sandal",
+    "price": 76.50,
+    "category": "women",
+    "type": "shoe",
+    "image": [
+      "image/women/women-shoe5.jpg",
+      "image/women/women-shoe6.jpg",
+      "image/women/women-shoe5.jpg",
+      "image/women/women-shoe6.jpg"
     ],
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
@@ -1264,6 +1266,7 @@
     ],
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, dignissimos!"
   },
+  
   {
     "id": 66,
     "name": "Shari",
@@ -1278,6 +1281,7 @@
     ],
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
+
   {
     "id": 20,
     "name": "LD02 Lounge Dress",
@@ -1643,6 +1647,22 @@
     ],
     "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
   },
+
+  {
+    "id": 171,
+    "name": "Women Sandal",
+    "price": 40.50,
+    "category": "women",
+    "type": "shoe",
+    "image": [
+      "image/women/women-shoe11.jpg",
+      "image/women/women-shoe12.jpg",
+      "image/women/women-shoe11.jpg",
+      "image/women/women-shoe12.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+
   {
     "id": 32,
     "name": "cute baby dress",
@@ -2604,25 +2624,25 @@
   },
   
   {
-    "id": 171,
-    "name": "Women Sandal",
-    "price": 40.50,
-    "category": "women",
-    "type": "shoe",
-    "image": [
-      "image/women/women-shoe11.jpg",
-      "image/women/women-shoe12.jpg",
-      "image/women/women-shoe11.jpg",
-      "image/women/women-shoe12.jpg"
-    ],
-    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
-  },
-  
-  {
     "id": 183,
     "name": "Leather Jacket",
     "price": 150.50,
     "category": "men",
+    "type": "jacket",
+    "image": [
+      "image/men/jacket15.jpg",
+      "image/men/jacket16.jpg",
+      "image/men/jacket15.jpg",
+      "image/men/jacket16.jpg"
+    ],
+    "description": "a.h-cloth provides a number of Internet-based services through the Web Site (all such services, collectively, the Service). Notwithstanding the foregoing, it is expressly clarified that you will retain ownership and shall solely be responsible for any content that you provide or upload when using any Service, including any text, data, information, images, photographs, music, sound, video or any other material which you may upload, transmit or store when making use of our various Service. However, with regard to the product customization Service (as against other Services like blogs and forums) you expressly agree that by uploading and posting content on to the Website for public viewing and reproduction/use of your content by third party users."
+  },
+
+  {
+    "id": 200,
+    "name": "REVERSE",
+    "price": 150.50,
+    "category": "baby",
     "type": "jacket",
     "image": [
       "image/men/jacket15.jpg",
