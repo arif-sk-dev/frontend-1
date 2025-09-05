@@ -169,3 +169,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(target);
 });
+
+  // Show popup when homepage loads
+  window.addEventListener('load', () => {
+    document.getElementById('overlayOffer').style.display = 'flex';
+  });
+
+  // Close popup and remove overlay
+  function closePopupOffer() {
+    document.getElementById('overlayOffer').style.display = 'none';
+  }
