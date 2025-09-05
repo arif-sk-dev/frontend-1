@@ -776,10 +776,12 @@ header a.active {
     color: white;
     margin: 5px 3px;
     text-shadow: 0 0 5px black;
+    font-weight: 400;
   }
 
   .popupOffer p {
     font-size: 14px;
+    font-weight: 300;
     color: white;
     text-shadow: 0 0 3px black;
     padding-left: 3px;
