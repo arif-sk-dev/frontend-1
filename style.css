@@ -143,6 +143,8 @@ header a.active {
 .ri-shopping-cart-2-line span:hover {
   background-color: teal;
 }
+
+
 .listProduct .item img {
   width: 100%;
   display: block;
@@ -645,6 +647,58 @@ header a.active {
   object-fit: cover;
 }
 
+/* New Product section start here  */
+.newProductList .item img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* filter: drop-shadow(0 50px 20px black); */
+} 
+.newProductList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 4fr));
+  gap: 40px;
+  margin-bottom: 5rem;
+}
+.newProductList .item {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px lightgray;
+  transition: 0.3s ease-in-out;
+}
+.newProductList .item:hover {
+  transform: scale(1.05);
+}
+.newProductList .item h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+.newProductList .item .price {
+  letter-spacing: 3px;
+  font-size: small;
+}
+.newProductList .item button {
+  background-color: inherit;
+  border: 1px solid black;
+  color: black;
+  opacity: 0.8;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.newProductList .item button:hover {
+  background-color: teal;
+  color: white;
+  text-shadow: 0 0 7px black;
+}
+
+/* New product Section ene here  */
+
 @keyframes scrollGallery {
    to {
     translate: calc(-22 * 16rem);
@@ -715,7 +769,8 @@ header a.active {
  .container2 {
   margin: 3rem 1rem 1rem;
  }
-  .listProduct {
+  .listProduct,
+  .newProductList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -744,9 +799,9 @@ header a.active {
   .leaflet > p {
     padding: 0.5rem;
   }
-  .leaflet > img {
+  /* .leaflet > img {
     aspect-ratio: 16/9;
-  }
+  } */
 
   .photoTrack {
     margin-top: 0;
