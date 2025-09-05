@@ -1,5 +1,4 @@
 
-//===============================================================
 const listProductHTML = document.querySelector(".listProduct");
 const showMoreBtn = document.querySelector(".showMoreBtn");
 
