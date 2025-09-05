@@ -132,6 +132,25 @@ const levenshteinDistance = (str1, str2) => {
   return dp[m][n];
 };
 
+// New product animation
+document.addEventListener("DOMContentLoaded", () => {
+  const target = document.querySelector(".newProductList");
+  if (!target) return;
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.05
+  });
+
+  observer.observe(target);
+});
+
 // Leaflet animation
 document.addEventListener("DOMContentLoaded", () => {
   const target = document.querySelector(".leaflets");

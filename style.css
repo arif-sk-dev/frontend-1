@@ -43,7 +43,7 @@ header {
 a {
   position: relative;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: black;
 }
 
@@ -65,11 +65,6 @@ header a.active {
   color: teal;
 }
 
-/* header a:hover,
-header a.active {
-  color: teal;
-  border-bottom: 2px solid teal;
-} */
 
 #searchForm {
   display: flex;
@@ -661,6 +656,8 @@ header a.active {
   grid-template-columns: repeat(auto-fit, minmax(180px, 4fr));
   gap: 40px;
   margin-bottom: 5rem;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(300px);
 }
 .newProductList .item {
   padding: 5px;
@@ -696,6 +693,36 @@ header a.active {
   color: white;
   text-shadow: 0 0 7px black;
 }
+
+.newProductList.visible {   /* JS code to work */
+    /* animation: fadeIn 1s ease-in-out forwards; */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.4); }
+    to { opacity: 1; transform: scale(1); }
+  }  */
+
+
+
+
+
+.leaflets {
+    margin: 2.5rem;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  .leaflets.visible {   /* JS code to work */
+    /* animation: fadeIn 1s ease-in-out forwards; */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.4); }
+    to { opacity: 1; transform: scale(1); }
+  } 
 
 /* New product Section ene here  */
 
