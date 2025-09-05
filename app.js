@@ -5,7 +5,7 @@ const showMoreBtn = document.querySelector(".showMoreBtn");
 
 let products = [];
 let displayedProductsCount = 0;
-const productsToShowInitially = 10;
+const productsToShowInitially = 15;
 const productsPerLoad = 10;
 
 // Reusable render function
