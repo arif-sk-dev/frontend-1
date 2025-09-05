@@ -172,7 +172,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Show popup when homepage loads
   window.addEventListener('load', () => {
+    const popup = 
     document.getElementById('overlayOffer').style.display = 'flex';
+
+    //show popup again after 5 minutes
+    // setTimeout(()=> {
+    //   document.getElementById('overlayOffer').style.display = 'flex'
+    // }, 500);
   });
 
   // Close popup and remove overlay

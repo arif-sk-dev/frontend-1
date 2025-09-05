@@ -156,7 +156,8 @@ header a.active {
 .listProduct .item {
   padding: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px lightgray;
+  /* box-shadow: 0 0 10px lightgray; */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in-out;
 }
 .listProduct .item:hover {
@@ -657,12 +658,13 @@ header a.active {
   gap: 40px;
   margin-bottom: 5rem;
   transition: opacity 1s ease, transform 1s ease;
-  transform: translateY(300px);
+  /* transform: translateY(300px); */
 }
 .newProductList .item {
   padding: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px lightgray;
+  /* box-shadow: 0 0 10px lightgray; */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in-out;
 }
 .newProductList .item:hover {
@@ -686,7 +688,7 @@ header a.active {
   border-radius: 4px;
   padding: 5px;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 .newProductList .item button:hover {
   background-color: teal;
@@ -695,17 +697,10 @@ header a.active {
 }
 
 .newProductList.visible {   /* JS code to work */
-    /* animation: fadeIn 1s ease-in-out forwards; */
     opacity: 1;
-    transform: translateY(0);
+    /* transform: translateY(0); */
   }
-  /* @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.4); }
-    to { opacity: 1; transform: scale(1); }
-  }  */
-
-
-
+  /* New product section end here  */
 
 
 .leaflets {
@@ -755,13 +750,14 @@ header a.active {
   /* Popup box */
   .popupOffer {
     /* background: #fff; */
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),url(image/banner/baby1.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),url(image/banner/baby1.jpg);
     background-size: cover;
     background-position: center;
     /* padding: 20px; */
     border-radius: 10px;
     width: 400px;
     height: 250px;
+    margin: 1.3rem;
     text-align: center;
     position: relative;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);

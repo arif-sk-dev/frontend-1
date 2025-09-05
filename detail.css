@@ -290,7 +290,8 @@ body {
   padding: 5px;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 0 10px lightgray;
+  /* box-shadow: 0 0 10px lightgray; */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in-out;
 }
 .similar-products .item:hover {
